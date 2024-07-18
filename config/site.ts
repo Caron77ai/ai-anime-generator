@@ -6,7 +6,7 @@ import { SiBuymeacoffee, SiJuejin } from "react-icons/si";
 const OPEN_SOURCE_URL = 'https://github.com/weijunext/landing-page-boilerplate'
 
 const baseSiteConfig = {
-  name: "Landing page boilerplate",
+  name: "AI Anime Generator",
   description:
     "Transform your imagination into reality with our AI Anime Generator. Whether you're an artist, a content creator, or simply an anime enthusiast, our tool offers endless possibilities for you to explore and create breathtaking anime images with ease.",
   url: "https://landingpage.weijunext.com",
