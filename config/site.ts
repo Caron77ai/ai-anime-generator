@@ -6,13 +6,13 @@ import { SiBuymeacoffee, SiJuejin } from "react-icons/si";
 const OPEN_SOURCE_URL = 'https://github.com/weijunext/landing-page-boilerplate'
 
 const baseSiteConfig = {
-  name: "AI Anime Generator",
+  name: "Landing page boilerplate",
   description:
-    "Transform your imagination into reality with our AI Anime Generator. Whether you're an artist, a content creator, or simply an anime enthusiast, our tool offers endless possibilities for you to explore and create breathtaking anime images with ease.",
+    "A free, open-source, and powerful landing page boilerplate, ideal for various projects, enabling you to create a landing page in under an hour.",
   url: "https://landingpage.weijunext.com",
   ogImage: "https://landingpage.weijunext.com/og.png",
   metadataBase: '/',
-  keywords: ["ai anime generator", "ai anime art", "anime image generator", "anime art creator", "ai art generator", "create anime art", "anime art tool", "high-resolution anime images", "customizable anime art", "ai art technology", "anime avatar creator", "comic book illustration tool", "anime wallpaper generator", "digital art projects", "anime content creation", "social media anime art", "ai art for videos", "anime backgrounds generator", "personalized anime art", "advanced ai art tool"],
+  keywords: ["landing page boilerplate", "landing page template", "awesome landing page", "next.js landing page"],
   authors: [
     {
       name: "weijunext",
