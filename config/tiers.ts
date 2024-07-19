@@ -5,7 +5,7 @@ import { Tier, TiersEnum } from "@/types/pricing";
 export const TIERS_EN: Array<Tier> = [
   {
     key: TiersEnum.Free,
-    title: "Open-Source / Free",
+    title: "Free Plan",
     price: "Free",
     href: siteConfig.openSourceURL || "#",
     description:
