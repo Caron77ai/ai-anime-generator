@@ -2,26 +2,26 @@
 export const WALL_OF_LOVE = [
   {
     user: {
-      name: "Founder",
-      username: "Jane D.",
-      image: "/images/users/weijunext.jpeg",
+      name: "Caron77",
+      username: "Caron7_7",
+      image: "/images/users/Caron7_7.jpg",
     },
     content:
       "I absolutely love the AI Anime Generator! It's so easy to use and the results are amazing. I've been able to create stunning anime art for my social media pages.",
   },
   {
     user: {
-      name: "User1",
-      username: "Tom H.",
+      name: "Sara",
+      username: "Sara",
       image: "/images/users/1.png",
     },
     content:
-      "This tool has revolutionized my content creation process. The quality of the images is fantastic and the customization options are a game-changer.",
+      "As an artist, I find the AI Anime Generator incredibly inspiring. It helps me visualize my ideas and take my artwork to the next level.",
   },
   {
     user: {
-      name: "User2",
-      username: "Sara",
+      name: "Abhishek",
+      username: "HeyAbhishekk",
       image: "/images/users/2.png",
     },
     content:
@@ -29,8 +29,8 @@ export const WALL_OF_LOVE = [
   },
   {
     user: {
-      name: "User3",
-      username: "Daniel R.",
+      name: "ContractorsPov",
+      username: "ContractorsPov",
       image: "/images/users/3.png",
     },
     content:
@@ -38,8 +38,8 @@ export const WALL_OF_LOVE = [
   },
   {
     user: {
-      name: "User4",
-      username: "Emily",
+      name: "Yeetus Yotus",
+      username: "MarxWasRetarded",
       image: "/images/users/4.png",
     },
     content:
@@ -47,27 +47,27 @@ export const WALL_OF_LOVE = [
   },
   {
     user: {
-      name: "User5",
-      username: "Michael T.",
-      image: "/images/users/5.png",
+      name: "cuttlebone",
+      username: "cuttle_bone",
+      image: "/images/users/7.jpg",
     },
     content:
       "As a content creator, the AI Anime Generator has significantly boosted my productivity. The ability to generate consistent and high-quality anime art quickly is invaluable for my work on platforms like YouTube and Instagram.",
   },
   {
     user: {
-      name: "User6",
-      username: "Anna L.",
-      image: "/images/users/4.png",
+      name: "analogfucker",
+      username: "BEKE06630",
+      image: "/images/users/6.jpg",
     },
     content:
       "I've tried several anime art tools before, but none come close to the quality and ease of use of the AI Anime Generator. The advanced AI technology produces images that are stylistically consistent and visually impressive.",
   },
   {
     user: {
-      name: "User7",
-      username: "Sophie",
-      image: "/images/users/5.png",
+      name: "EGO",
+      username: "Eg0_Death",
+      image: "/images/users/8.jpg",
     },
     content:
       "The AI Anime Generator is perfect for both beginners and experienced artists. The intuitive interface makes it accessible to everyone, while the advanced options provide enough depth for more detailed creations.",
