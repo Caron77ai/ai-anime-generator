@@ -31,7 +31,7 @@ export const WALL_OF_LOVE = [
     user: {
       name: "ContractorsPov",
       username: "ContractorsPov",
-      image: "/images/users/9.png",
+      image: "/images/users/9.jpg",
     },
     content:
       "Using the AI Anime Generator for my short video productions has been fantastic. The quick generation times and the quality of the anime backgrounds have made my content stand out on social media.",
