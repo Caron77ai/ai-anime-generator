@@ -13,14 +13,14 @@
   },
   "Pricing": {
     "title": "Pricing",
-    "title2": "Get unlimited access.",
-    "description": "The page you are currently viewing is an open-source, free boilerplate.",
-    "doYouLike": "Do you like this landing page boilerplate?",
+    "title2": "Choose the plan that fits your needs.",
+    "description": "We offer a variety of flexible pricing plans to accommodate different requirements and budgets.",
+    "doYouLike": "Do you like this AI anime generator?",
     "follow": "Follow my Twitter."
   },
   "WallOfLove": {
     "title": "Wall of Love",
-    "description1": "If you use this landing page template and recommend it on your Twitter,",
+    "description1": "If you use this AI anime generator and recommend it on your Twitter,",
     "description2": "please let me know",
     "description3": ". I will display your tweet and recommendation here."
   },
@@ -29,15 +29,15 @@
     "description": "Here are some of the most frequently asked questions."
   },
   "CTA": {
-    "title": "Build Your Landing Page Now",
-    "description1": "Build",
-    "description2": "your landing page,",
-    "description3": "show",
-    "description4": "your product, and",
-    "description5": "start earning",
+    "title": "Create Stunning Anime Artwork Now",
+    "description1": "Unleash",
+    "description2": "your creativity",
+    "description3": "and",
+    "description4": "bring your anime visions",
+    "description5": "to life",
     "description6": "!"
   },
   "CTAButton": {
-    "title": "Get Boilerplate"
+    "title": "Try for free!"
   }
 }

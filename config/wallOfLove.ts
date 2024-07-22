@@ -2,74 +2,74 @@
 export const WALL_OF_LOVE = [
   {
     user: {
-      name: "Founder",
-      username: "weijunext",
-      image: "/images/users/weijunext.jpeg",
+      name: "Caron77",
+      username: "Caron7_7",
+      image: "/images/users/Caron7_7.jpg",
     },
     content:
-      "As a front-end developer, I'm highly satisfied with this landing page template. Editing text and images was very intuitive, and I encountered no technical hurdles throughout the process. The template's responsive design is excellent as well; whether on mobile or desktop, the page layout adapts perfectly. I managed to launch my own product's landing page in just half a day, significantly boosting my efficiency.",
+      "I absolutely love the AI Anime Generator! It's so easy to use and the results are amazing. I've been able to create stunning anime art for my social media pages.",
   },
   {
     user: {
-      name: "User1",
-      username: "weijunext",
+      name: "Sara",
+      username: "Sara",
       image: "/images/users/1.png",
     },
     content:
-      "This template has given me a new perspective on coding. As a backend developer with not much front-end experience, I found this template to be very user-friendly. I could build a professional-looking landing page with hardly any coding required. This not only saved me time but also sparked more interest in front-end development.",
+      "As an artist, I find the AI Anime Generator incredibly inspiring. It helps me visualize my ideas and take my artwork to the next level.",
   },
   {
     user: {
-      name: "User2",
-      username: "weijunext",
-      image: "/images/users/2.png",
+      name: "Abhishek",
+      username: "HeyAbhishekk",
+      image: "/images/users/10.jpg",
     },
     content:
-      "As a developer who transitioned from design, I'm impressed with the aesthetic design of this template. It's not only easy to use but also comes with a default design that feels both modern and professional. I made some adjustments to the details to match my brand style, and the entire process was both simple and enjoyable.",
+      "As an artist, I find the AI Anime Generator incredibly inspiring. It helps me visualize my ideas and take my artwork to the next level.",
   },
   {
     user: {
-      name: "User3",
-      username: "weijunext",
-      image: "/images/users/3.png",
+      name: "ContractorsPov",
+      username: "ContractorsPov",
+      image: "/images/users/9.jpg",
     },
     content:
-      "The performance of this template is outstanding, with very fast loading times and SEO-friendly features. As a developer focused on product optimization, I appreciate the high performance and optimization of the template. With simple modifications, I was able to further optimize my landing page, improving the speed at which users can access it. The SEO friendliness of the template also helped my page achieve better rankings in search engines.",
+      "Using the AI Anime Generator for my short video productions has been fantastic. The quick generation times and the quality of the anime backgrounds have made my content stand out on social media.",
   },
   {
     user: {
-      name: "User4",
-      username: "weijunext",
+      name: "Yeetus Yotus",
+      username: "MarxWasRetarded",
       image: "/images/users/4.png",
     },
     content:
-      "The interactive elements of this template added a lot of fun to my project. I particularly liked the settings for animations and transition effects, which made the browsing experience richer and more dynamic. Adjusting these interactive elements was very straightforward, requiring no deep front-end knowledge, which was very user-friendly for a non-professional front-end developer like me.",
+      "I've used the AI Anime Generator to design mobile wallpapers, and the results are simply stunning. The high-resolution images look amazing on my phone, and I love how I can personalize them to match my style.",
   },
   {
     user: {
-      name: "User5",
-      username: "weijunext",
-      image: "/images/users/5.png",
+      name: "cuttlebone",
+      username: "cuttle_bone",
+      image: "/images/users/7.jpg",
     },
     content:
-      "This template does a great job with multi-language support, which is crucial for my international project. I was able to easily add different language versions, and the template ensured consistency in layout and design across various languages. This significantly reduced my workload in the localization process and helped me reach global users more quickly.",
+      "As a content creator, the AI Anime Generator has significantly boosted my productivity. The ability to generate consistent and high-quality anime art quickly is invaluable for my work on platforms like YouTube and Instagram.",
   },
   {
     user: {
-      name: "User6",
-      username: "weijunext",
-      image: "/images/users/4.png",
+      name: "analogfucker",
+      username: "BEKE06630",
+      image: "/images/users/6.jpg",
     },
     content:
-      "The interactive elements of this template added a lot of fun to my project. I particularly liked the settings for animations and transition effects, which made the browsing experience richer and more dynamic. Adjusting these interactive elements was very straightforward, requiring no deep front-end knowledge, which was very user-friendly for a non-professional front-end developer like me.",
+      "I've tried several anime art tools before, but none come close to the quality and ease of use of the AI Anime Generator. The advanced AI technology produces images that are stylistically consistent and visually impressive.",
   },
   {
     user: {
-      name: "User7",
-      username: "weijunext",
-      image: "/images/users/5.png",
+      name: "EGO",
+      username: "Eg0_Death",
+      image: "/images/users/8.jpg",
     },
     content:
-      "This template does a great job with multi-language support, which is crucial for my international project. I was able to easily add different language versions, and the template ensured consistency in layout and design across various languages. This significantly reduced my workload in the localization process and helped me reach global users more quickly.",
+      "The AI Anime Generator is perfect for both beginners and experienced artists. The intuitive interface makes it accessible to everyone, while the advanced options provide enough depth for more detailed creations.",
   },
 ];

@@ -1,8 +1,9 @@
 {
   "Hero": {
-    "title1": "",
-    "title2": "Página de aterrizaje",
-    "title3": "construcción rápida"
+    "title1": "Herramienta de creación",
+    "title2": "de anime",
+    "title3": "inteligente de IA",
+    "description": "Un generador de arte anime de alta eficiencia, inteligente y fácil de usar, adecuado para todas las necesidades creativas, que le ayuda a lograr la creación de arte anime en poco tiempo."
   },
   "SocialProof": {
     "maker": "creadores construyen rápido"
@@ -12,14 +13,14 @@
   },
   "Pricing": {
     "title": "Precios",
-    "title2": "Obtén acceso ilimitado.",
-    "description": "La página que estás viendo actualmente es un template gratuito y de código abierto.",
-    "doYouLike": "¿Te gusta este template para páginas de aterrizaje?",
+    "title2": "Elige el plan que se adapte a tus necesidades.",
+    "description": "Ofrecemos una variedad de planes de precios flexibles para satisfacer diferentes requisitos y presupuestos.",
+    "doYouLike": "¿Te gusta este generador de anime de IA?",
     "follow": "Sigue mi Twitter."
   },
   "WallOfLove": {
     "title": "Muro del Amor",
-    "description1": "Si usas esta plantilla para página de aterrizaje y la recomiendas en tu Twitter,",
+    "description1": "Si usas este generador de anime con IA y lo recomiendas en tu Twitter,",
     "description2": "por favor házmelo saber",
     "description3": ". Exhibiré tu tweet y recomendación aquí."
   },
@@ -28,15 +29,15 @@
     "description": "Aquí están algunas de las preguntas más frecuentes."
   },
   "CTA": {
-    "title": "Construye tu página de aterrizaje ahora",
-    "description1": "Construye",
-    "description2": "tu página de aterrizaje,",
-    "description3": "muestra",
-    "description4": "tu producto, y",
-    "description5": "comienza a ganar",
-    "description6": "¡dinero!"
+    "title": "Crea una obra de arte de anime impresionante ahora",
+    "description1": "Desata",
+    "description2": "tu creatividad",
+    "description3": "y",
+    "description4": "da vida a tus visiones de anime",
+    "description5": "",
+    "description6": "¡"
   },
   "CTAButton": {
-    "title": "Obtener Plantilla"
+    "title": "¡Prueba gratis!"
   }
 }

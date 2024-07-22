@@ -1,9 +1,9 @@
 {
   "Hero": {
-    "title1": "",
-    "title2": "ランディングページ",
-    "title3": "迅速に構築",
-    "description": "無料でオープンソースかつ強力なランディングページのテンプレート。さまざまなプロジェクトに理想的で、1時間以内にランディングページを作成できます。"
+    "title1": "驚くべき",
+    "title2": "アニメアート",
+    "title3": "を創造する",
+    "description": "高効率でスマートな操作性に優れたアニメアートジェネレーターです。多様な創作ニーズに応じ、短時間でアニメアートの創作を実現します。"
   },
   "SocialProof": {
     "maker": "開発者が迅速に出荷"
@@ -12,15 +12,15 @@
     "title": "Feature"
   },
   "Pricing": {
-    "title": "価格設定",
-    "title2": "無制限アクセスを取得。",
-    "description": "現在閲覧中のページは、オープンソースで無料のテンプレートです。",
-    "doYouLike": "このランディングページのテンプレートは気に入りましたか？",
+    "title": "料金プラン",
+    "title2": "ニーズに合ったプランをお選びください。",
+    "description": "さまざまな要件や予算に対応する柔軟な料金プランをご用意しています。",
+    "doYouLike": "このAIアニメ生成器は気に入りましたか？",
     "follow": "私のTwitterをフォローしてください。"
   },
   "WallOfLove": {
     "title": "WallOfLove",
-    "description1": "このランディングページテンプレートを使用してTwitterで推奨した場合、",
+    "description1": "もしこのAIアニメジェネレーターを使用し、Twitterで推薦していただければ、",
     "description2": "私に知らせてください",
     "description3": "。あなたのツイートと推薦をここに表示します。"
   },
@@ -29,15 +29,15 @@
     "description": "最も頻繁に尋ねられる質問はこちらです。"
   },
   "CTA": {
-    "title": "今すぐあなたのランディングページを構築",
-    "description1": "あなたのランディングページを",
-    "description2": "構築し、",
-    "description3": "あなたの製品を",
-    "description4": "紹介し、そして",
-    "description5": "収益を得始めましょう",
+    "title": "今すぐ素晴らしいアニメアートを作成しよう",
+    "description1": "解き放て",
+    "description2": "あなたの創造力を",
+    "description3": "そして",
+    "description4": "あなたのアニメのビジョンを",
+    "description5": "現実に",
     "description6": "！"
   },
   "CTAButton": {
-    "title": "テンプレートを入手"
+    "title": "無料で試す！"
   }
 }

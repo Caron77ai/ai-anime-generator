@@ -1,9 +1,9 @@
 {
   "Hero": {
-    "title1": "快速构建",
-    "title2": "落地页",
-    "title3": "",
-    "description": "一个免费、开源且强大的落地页模板，适用于各种项目，让你在一个小时内搭建落地页。"
+    "title1": "AI动漫",
+    "title2": "创作",
+    "title3": "神器",
+    "description": "一个高效、智能且易于操作的动漫艺术生成器，适合各类创作需求，助您在短时间内实现动漫艺术创作。"
   },
   "SocialProof": {
     "maker": "制作者快速开发"
@@ -13,14 +13,14 @@
   },
   "Pricing": {
     "title": "定价",
-    "title2": "拥有无限访问权限",
-    "description": "你当前查看的页面是一个开源的、免费的模板。",
-    "doYouLike": "你喜欢这个落地页模板吗？",
-    "follow": "关注我的推特。"
+    "title2": "选择适合您的计划。",
+    "description": "我们提供各种灵活的价格计划，以满足不同的需求和预算。",
+    "doYouLike": "您喜欢这个AI动漫生成器吗？",
+    "follow": "关注我的Twitter。"
   },
   "WallOfLove": {
     "title": "Wall of Love",
-    "description1": "如果你使用这个落地页模板并在推特上推荐了，",
+    "description1": "如果你使用这个AI动漫生成器并在Twitter上推荐了，",
     "description2": "请告诉我",
     "description3": "，我会在这里展示你的推文和推荐。"
   },
@@ -29,15 +29,15 @@
     "description": "这里有一些最常见的问题。"
   },
   "CTA": {
-    "title": "立即构建你的落地页",
-    "description1": "构建",
-    "description2": "你的落地页，",
-    "description3": "展示",
-    "description4": "你的产品，并开始",
-    "description5": "赚取收入",
+    "title": "立即创建令人惊叹的动漫艺术作品",
+    "description1": "释放",
+    "description2": "你的创造力",
+    "description3": "并且",
+    "description4": "将你的动漫愿景",
+    "description5": "变为现实",
     "description6": "！"
   },
   "CTAButton": {
-    "title": "获取模板"
+    "title": "免费试用！"
   }
 }

@@ -7,203 +7,203 @@ import { MdCloudUpload } from "react-icons/md";
 
 export const FEATURES_EN = [
   {
-    title: "Open Source Advantage",
-    content: "Completely free with a wealth of customization options.",
+    title: "Multiple Manga Art Styles",
+    content: "Offer various styles like Anime, Shojo, disney, pixar, and more, each with unique character designs, shading, and aesthetics to suit different preferences and project needs.",
     icon: BsGithub,
   },
   {
-    title: "Responsive Design",
+    title: "Cutting-edge AI Technology",
     content:
-      "Templates meticulously designed to ensure optimal display on any device.",
+      "Our AI Anime Generator uses the latest advancements in artificial intelligence to generate high-quality anime images. The AI learns from thousands of anime artworks to bring you accurate and stylistically consistent results.",
     icon: FaMobileScreenButton,
   },
   {
-    title: "Easy Customization",
+    title: "Customizable Outputs",
     content:
-      "Effortlessly change colors, fonts, and layouts without any coding knowledge.",
+      "Tailor your anime images to suit your needs. Adjust various settings such as color schemes, character features, and background elements to create unique and personalized artwork.",
     icon: FaToolbox,
   },
   {
-    title: "SEO Optimized",
+    title: "User-friendly Interface",
     content:
-      "Templates built with search engine optimization in mind to enhance your website's discoverability.",
+      "Designed for ease of use, our interface allows anyone to generate anime art effortlessly. No prior experience or technical skills are required. Simply input your desired parameters and let the AI do the rest.",
     icon: MagnetIcon,
   },
   {
-    title: "One-Click Deployment",
+    title: "High-resolution Images",
     content:
-      "Tightly integrated with leading web hosting services for instant website publishing.",
+      "All generated images are in high resolution, making them perfect for printing, digital art projects, or social media sharing.",
     icon: MdCloudUpload,
   },
   {
-    title: "Globalization Support",
+    title: "Fast Generation",
     content:
-      "Supports multiple languages, making your website attractive to a global audience.",
+      "Experience quick turnaround times with our optimized AI processes. Generate stunning anime art in a matter of seconds.",
     icon: FaEarthAsia,
   },
 ];
 
 export const FEATURES_ZH = [
   {
-    title: "开源优势",
-    content: "完全免费，提供丰富的自定义选项。",
+    title: "多元化漫画艺术风格",
+    content: "提供丰富多样的漫画风格，包括日式动漫、迪士尼动漫、少女动漫、皮克斯动漫等。每种风格都具有独特的人物设计、明暗处理技巧和视觉美学，能够满足不同项目需求和个人偏好。",
     icon: BsGithub,
   },
   {
-    title: "响应式设计",
-    content: "精心设计的模板，确保在任何设备上都能优化显示。",
+    title: "专业绘画模型",
+    content: "采用最新的深度学习算法，通过对海量动漫作品的分析和学习，能够生成高品质且风格一致的动漫图像。这保证了生成结果的准确性和艺术性。",
     icon: FaMobileScreenButton,
   },
   {
-    title: "易于定制",
-    content: "轻松更改颜色、字体和布局，无需任何编码知识。",
+    title: "灵活定制",
+    content: "多种自定义功能。可以调整色彩方案、修改人物特征、更换背景元素等，让每一幅作品都能充分体现个人创意。",
     icon: FaToolbox,
   },
   {
-    title: "SEO优化",
-    content: "构建模板时考虑到搜索引擎优化，增强网站的可发现性。",
+    title: "简单易用",
+    content: "操作界面简洁明了，即使没有专业背景的用户也能轻松上手。只需设置所需参数，AI就能自动完成复杂的图像生成过程。",
     icon: MagnetIcon,
   },
   {
-    title: "一键部署",
-    content: "与领先的网站托管服务紧密集成，实现即时网站发布。",
+    title: "高分辨率输出",
+    content: "所有生成的图像均为高分辨率格式，完全满足印刷、数字艺术创作和社交媒体分享等多种用途的需求。",
     icon: MdCloudUpload,
   },
   {
-    title: "全球化支持",
-    content: "支持多种语言，让你的网站吸引全球受众。",
+    title: "快速出图",
+    content: "通过优化的AI处理流程，大幅提升了图像生成速度。用户可以在短短几秒内获得高质量的动漫艺术作品，极大地提高了工作效率。",
     icon: FaEarthAsia,
   },
 ];
 
 export const FEATURES_JA = [
   {
-    title: "オープンソースの利点",
-    content: "完全無料で、豊富なカスタマイズオプションを提供。",
+    title: "多彩な漫画アートスタイル",
+    content: "日本アニメ、ディズニーアニメ、少女漫画、ピクサーアニメなど、豊富な漫画スタイルをご用意。各スタイルは独特のキャラクターデザイン、陰影表現、視覚的美学を持ち、様々なプロジェクトの要件や個人の好みに対応します。",
     icon: BsGithub,
   },
   {
-    title: "レスポンシブデザイン",
-    content: "どのデバイス上でも最適に表示されるように細心のデザインを施したテンプレート。",
+    title: "プロフェッショナルな描画モデル",
+    content: "最新の深層学習アルゴリズムを採用し、膨大な漫画作品の分析と学習を通じて、高品質で一貫性のあるアニメ画像を生成。生成結果の正確性と芸術性を保証します。",
     icon: FaMobileScreenButton,
   },
   {
-    title: "簡単カスタマイズ",
-    content: "色、フォント、レイアウトをコーディング知識なしで簡単に変更可能。",
+    title: "柔軟なカスタマイズ",
+    content: "多様なカスタマイズ機能を提供。カラースキームの調整、キャラクター特徴の修正、背景要素の変更など、各作品に個人の創造性を十分に反映させることができます。",
     icon: FaToolbox,
   },
   {
-    title: "SEO最適化",
-    content: "ウェブサイトの発見可能性を高めるために、検索エンジン最適化を念頭に置いて構築されたテンプレート。",
+    title: "簡単操作",
+    content: "直感的なインターフェースにより、専門的な背景がなくても簡単に操作可能。必要なパラメータを設定するだけで、AIが複雑な画像生成プロセスを自動的に完了します。",
     icon: MagnetIcon,
   },
   {
-    title: "ワンクリックデプロイメント",
-    content: "主要なウェブホスティングサービスと密接に統合し、即時にウェブサイトを公開。",
+    title: "高解像度出力",
+    content: "生成されるすべての画像は高解像度形式で、印刷、デジタルアート制作、SNS共有など、様々な用途に完全に対応します。",
     icon: MdCloudUpload,
   },
   {
-    title: "グローバリゼーションサポート",
-    content: "複数言語をサポートし、グローバルな視聴者を魅了するウェブサイト。",
+    title: "高速生成",
+    content: "最適化されたAI処理プロセスにより、画像生成速度が大幅に向上。わずか数秒で高品質なアニメアートワークを得ることができ、作業効率が大幅に改善されます。",
     icon: FaEarthAsia,
   },
 ];
 
 export const FEATURES_AR = [
   {
-    title: "ميزة المصدر المفتوح",
-    content: "مجانية بالكامل مع ثروة من خيارات التخصيص.",
+    title: "أنماط متعددة لفن المانجا",
+    content: "توفير أنماط متنوعة مثل الأنيمي، الشوجو، ديزني، بيكسار وغيرها، كل منها بتصاميم شخصيات فريدة، وتظليل، وجماليات تناسب مختلف الأذواق واحتياجات المشاريع.",
     icon: BsGithub,
   },
   {
-    title: "تصميم متجاوب",
-    content: "تم تصميم القوالب بعناية لضمان عرض مثالي على أي جهاز.",
+    title: "تقنية الذكاء الاصطناعي المتطورة",
+    content: "يستخدم مولد الأنيمي بالذكاء الاصطناعي أحدث التطورات في الذكاء الاصطناعي لإنتاج صور أنيمي عالية الجودة. يتعلم الذكاء الاصطناعي من آلاف الأعمال الفنية للأنيمي لتقديم نتائج دقيقة ومتسقة أسلوبياً.",
     icon: FaMobileScreenButton,
   },
   {
-    title: "تخصيص سهل",
-    content: "غير الألوان والخطوط والتخطيطات بسهولة دون الحاجة إلى معرفة بالبرمجة.",
+    title: "مخرجات قابلة للتخصيص",
+    content: "تخصيص صور الأنيمي لتلبية الاحتياجات الخاصة. إمكانية ضبط إعدادات متنوعة مثل مخططات الألوان، وميزات الشخصيات، وعناصر الخلفية لإنشاء أعمال فنية فريدة وشخصية.",
     icon: FaToolbox,
   },
   {
-    title: "مُحسّن لمحركات البحث",
-    content: "تم بناء القوالب مع مراعاة تحسين محركات البحث لتعزيز قابلية اكتشاف موقعك.",
+    title: "واجهة سهلة الاستخدام",
+    content: "تم تصميم الواجهة لسهولة الاستخدام، مما يتيح لأي شخص إنشاء فن الأنيمي دون عناء. لا حاجة لخبرة سابقة أو مهارات تقنية. ما عليك سوى إدخال المعايير المطلوبة وترك الباقي للذكاء الاصطناعي.",
     icon: MagnetIcon,
   },
   {
-    title: "نشر بنقرة واحدة",
-    content: "متكاملة بشكل وثيق مع خدمات استضافة الويب الرائدة لنشر الموقع فوراً.",
+    title: "صور عالية الدقة",
+    content: "جميع الصور المنتجة بدقة عالية، مما يجعلها مثالية للطباعة، ومشاريع الفن الرقمي، أو المشاركة على وسائل التواصل الاجتماعي.",
     icon: MdCloudUpload,
   },
   {
-    title: "دعم العولمة",
-    content: "يدعم لغات متعددة، مما يجعل موقعك جذابًا لجمهور عالمي.",
+    title: "إنتاج سريع",
+    content: "الاستفادة من سرعة الإنتاج بفضل عمليات الذكاء الاصطناعي المحسنة. إنشاء فن أنيمي مذهل في غضون ثوانٍ معدودة.",
     icon: FaEarthAsia,
   },
 ];
 
 export const FEATURES_ES = [
   {
-    title: "Ventaja del Código Abierto",
-    content: "Completamente gratuito con una riqueza de opciones de personalización.",
+    title: "Múltiples Estilos de Arte Manga",
+    content: "Se ofrecen diversos estilos como Anime, Shojo, Disney, Pixar y más, cada uno con diseños de personajes únicos, sombreado y estética para adaptarse a diferentes preferencias y necesidades de proyectos.",
     icon: BsGithub,
   },
   {
-    title: "Diseño Responsivo",
-    content: "Plantillas diseñadas meticulosamente para garantizar una visualización óptima en cualquier dispositivo.",
+    title: "Tecnología de IA de Vanguardia",
+    content: "El Generador de Anime por IA utiliza los últimos avances en inteligencia artificial para producir imágenes de anime de alta calidad. La IA aprende de miles de obras de arte de anime para ofrecer resultados precisos y estilísticamente coherentes.",
     icon: FaMobileScreenButton,
   },
   {
-    title: "Personalización Fácil",
-    content: "Cambia colores, fuentes y diseños sin esfuerzo y sin necesidad de conocimientos de codificación.",
+    title: "Resultados Personalizables",
+    content: "Adapte las imágenes de anime a sus necesidades. Ajuste diversas configuraciones como esquemas de color, características de personajes y elementos de fondo para crear obras de arte únicas y personalizadas.",
     icon: FaToolbox,
   },
   {
-    title: "Optimizado para SEO",
-    content: "Plantillas construidas con la optimización de motores de búsqueda en mente para mejorar la descubribilidad de tu sitio web.",
+    title: "Interfaz Intuitiva",
+    content: "Diseñada para facilitar su uso, la interfaz permite a cualquier persona generar arte de anime sin esfuerzo. No se requiere experiencia previa ni habilidades técnicas. Simplemente ingrese los parámetros deseados y deje que la IA haga el resto.",
     icon: MagnetIcon,
   },
   {
-    title: "Despliegue con Un Clic",
-    content: "Integrado estrechamente con servicios líderes de alojamiento web para la publicación instantánea del sitio web.",
+    title: "Imágenes de Alta Resolución",
+    content: "Todas las imágenes generadas son de alta resolución, lo que las hace perfectas para impresión, proyectos de arte digital o compartir en redes sociales.",
     icon: MdCloudUpload,
   },
   {
-    title: "Soporte de Globalización",
-    content: "Soporta múltiples idiomas, haciendo tu sitio web atractivo para una audiencia global.",
+    title: "Generación Rápida",
+    content: "Experimente tiempos de respuesta rápidos con procesos de IA optimizados. Genere impresionante arte de anime en cuestión de segundos.",
     icon: FaEarthAsia,
   },
 ];
 
 export const FEATURES_RU = [
   {
-    title: "Преимущество Открытого Исходного Кода",
-    content: "Полностью бесплатно с широкими возможностями настройки.",
+    title: "Множество Стилей Манга-Арта",
+    content: "Предлагаются различные стили, такие как Аниме, Сёдзё, Дисней, Пиксар и другие, каждый с уникальным дизайном персонажей, техникой затенения и эстетикой, отвечающие различным предпочтениям и потребностям проектов.",
     icon: BsGithub,
   },
   {
-    title: "Адаптивный Дизайн",
-    content: "Шаблоны, тщательно разработанные для обеспечения оптимального отображения на любом устройстве.",
+    title: "Передовая Технология Искусственного Интеллекта",
+    content: "ИИ-генератор аниме использует новейшие достижения в области искусственного интеллекта для создания высококачественных аниме-изображений. ИИ обучается на тысячах аниме-артворков, обеспечивая точные и стилистически последовательные результаты.",
     icon: FaMobileScreenButton,
   },
   {
-    title: "Легкая Настройка",
-    content: "Легко изменяйте цвета, шрифты и макеты без знаний в области программирования.",
+    title: "Настраиваемые Результаты",
+    content: "Возможность адаптации аниме-изображений под индивидуальные требования. Регулировка различных параметров, таких как цветовые схемы, черты персонажей и элементы фона, для создания уникальных и персонализированных произведений искусства.",
     icon: FaToolbox,
   },
   {
-    title: "Оптимизировано для Поисковых Систем",
-    content: "Шаблоны созданы с учетом оптимизации для поисковых систем, чтобы повысить обнаруживаемость вашего сайта.",
+    title: "Удобный Интерфейс",
+    content: "Интерфейс разработан для простоты использования, позволяя любому пользователю без усилий создавать аниме-арт. Не требуется предварительный опыт или технические навыки. Достаточно ввести желаемые параметры, и ИИ выполнит остальную работу.",
     icon: MagnetIcon,
   },
   {
-    title: "Развертывание в Один Клик",
-    content: "Плотно интегрировано с ведущими сервисами веб-хостинга для мгновенной публикации сайта.",
+    title: "Изображения Высокого Разрешения",
+    content: "Все сгенерированные изображения имеют высокое разрешение, что делает их идеальными для печати, проектов цифрового искусства или публикации в социальных сетях.",
     icon: MdCloudUpload,
   },
   {
-    title: "Поддержка Глобализации",
-    content: "Поддерживает несколько языков, делая ваш сайт привлекательным для мировой аудитории.",
+    title: "Быстрая Генерация",
+    content: "Оптимизированные процессы ИИ обеспечивают быстрое время обработки. Создание потрясающего аниме-арта за считанные секунды.",
     icon: FaEarthAsia,
   },
 ];
