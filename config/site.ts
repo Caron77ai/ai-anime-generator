@@ -34,25 +34,25 @@ const baseSiteConfig = {
   },
   headerLinks: [
     { name: 'repo', href: OPEN_SOURCE_URL, icon: BsGithub },
-    { name: 'twitter', href: "https://twitter.com/weijunext", icon: BsTwitterX },
-    { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee }
+    { name: 'twitter', href: "https://x.com/Caron7_7", icon: BsTwitterX },
+    { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/caron77", icon: SiBuymeacoffee }
   ],
   footerLinks: [
-    { name: 'email', href: "mailto:weijunext@gmail.com", icon: MdEmail },
-    { name: 'twitter', href: "https://twitter.com/weijunext", icon: BsTwitterX },
-    { name: 'github', href: "https://github.com/weijunext/", icon: BsGithub },
-    { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee },
-    { name: 'juejin', href: "https://juejin.cn/user/26044008768029", icon: SiJuejin },
-    { name: 'weChat', href: "https://weijunext.com/make-a-friend", icon: BsWechat }
+    { name: 'email', href: "mailto:caron77ai@gmail.com", icon: MdEmail },
+    { name: 'twitter', href: "https://x.com/Caron7_7", icon: BsTwitterX },
+    { name: 'github', href: "https://github.com/Caron77", icon: BsGithub },
+    { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/caron77", icon: SiBuymeacoffee },
+    { name: 'juejin', href: "https://juejin.cn/user/*****", icon: SiJuejin },
+    { name: 'weChat', href: "https://ainavi.world/", icon: BsWechat }
   ],
   footerProducts: [
-    { url: 'https://weijunext.com/', name: 'J实验室' },
-    { url: 'https://smartexcel.cc/', name: 'Smart Excel' },
+    { url: 'https://www.aitoolsss.com/', name: 'AI Toolsss' },
+    { url: 'https://aianimegenerators.com', name: 'AI Anime Generators' },
     { url: 'https://landingpage.weijunext.com/', name: 'Landing Page Boilerplate' },
     { url: 'https://nextjs.weijunext.com/', name: 'Next.js Practice' },
-    { url: 'https://starter.weijunext.com/', name: 'Next.js Starter' },
-    { url: 'https://githubbio.com', name: 'Github Bio Generator' },
-    { url: 'https://github.com/weijunext/indie-hacker-tools', name: 'Indie Hacker Tools' },
+    // { url: 'https://starter.weijunext.com/', name: 'Next.js Starter' },
+    // { url: 'https://githubbio.com', name: 'Github Bio Generator' },
+    // { url: 'https://github.com/weijunext/indie-hacker-tools', name: 'Indie Hacker Tools' },
   ]
 }
 
