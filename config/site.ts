@@ -3,25 +3,25 @@ import { BsGithub, BsTwitterX, BsWechat } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { SiBuymeacoffee, SiJuejin } from "react-icons/si";
 
-const OPEN_SOURCE_URL = 'https://github.com/weijunext/landing-page-boilerplate'
+const OPEN_SOURCE_URL = 'https://github.com/Caron77'
 
 const baseSiteConfig = {
-  name: "Landing page boilerplate",
+  name: "AI Anime Generator",
   description:
-    "A free, open-source, and powerful landing page boilerplate, ideal for various projects, enabling you to create a landing page in under an hour.",
-  url: "https://landingpage.weijunext.com",
+    "Transform your creative ideas into stunning anime art with our advanced AI Anime Generator, perfect for artists, creators, and enthusiasts alike, offering limitless creative potential.",
+  url: "https://aianimegenerators.com",
   ogImage: "https://landingpage.weijunext.com/og.png",
   metadataBase: '/',
-  keywords: ["landing page boilerplate", "landing page template", "awesome landing page", "next.js landing page"],
+  keywords: ["ai anime generator", "ai anime art", "anime image generator", "anime art creator", "ai art generator", "create anime art", "anime art tool", "high-resolution anime images", "customizable anime art", "ai art technology", "anime avatar creator", "comic book illustration tool", "anime wallpaper generator", "digital art projects", "anime content creation", "social media anime art", "ai art for videos", "anime backgrounds generator", "personalized anime art", "advanced ai art tool"],
   authors: [
     {
-      name: "weijunext",
-      url: "https://weijunext.com",
-      twitter: 'https://twitter.com/weijunext',
+      name: "Caron77",
+      url: "https://x.com/Caron7_7",
+      twitter: 'https://x.com/Caron7_7',
     }
   ],
-  creator: '@weijunext',
-  openSourceURL: 'https://github.com/weijunext/landing-page-boilerplate',
+  creator: '@Caron77',
+  openSourceURL: 'https://github.com/Caron77',
   themeColors: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' },
