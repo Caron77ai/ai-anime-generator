@@ -4,11 +4,7 @@ import Link from "next/link";
 
 const CTAButton = ({ locale }: { locale: any }) => {
   return (
-    <Link
-      href="https://aianimegenerators.com/"
-      target="_blank"
-      rel="noopener noreferrer nofollow"
-    >
+    <Link href="/anime-generator">
       <Button
         variant="default"
         className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white"
