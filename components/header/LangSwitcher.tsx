@@ -12,7 +12,7 @@ import { defaultLocale, localeNames } from "@/lib/i18n";
 
 export const LangSwitcher = () => {
   const params = useParams();
-  const lang = params.lang;
+  const lang = params?.lang;
 
   // const lang = (params.lang && params.lang[0]) || defaultLocale;
   let langName =
