@@ -128,3 +128,6 @@ dist
 # sitemap
 */sitemap*.xml
 */robots.txt
+
+# .gitignore
+.env.local
