@@ -2,12 +2,21 @@
 import HeaderLinks from "@/components/header/HeaderLinks";
 import { LangSwitcher } from "@/components/header/LangSwitcher";
 import { siteConfig } from "@/config/site";
+import { getCurrentUser } from "@/lib/session";
 import { MenuIcon } from "lucide-react";
+import { signIn, signOut } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { CgClose } from "react-icons/cg";
 import { ThemedButton } from "../ThemedButton";
+
+interface User {
+  id?: string;
+  name?: string | null;
+  email?: string | null;
+  image?: string | null;
+}
 
 const links = [
   {
@@ -30,6 +39,29 @@ const links = [
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [user, setUser] = useState<User | null>(null);
+
+  const fetchUser = useCallback(async () => {
+    try {
+      const userData = await getCurrentUser();
+      setUser(userData ?? null); // 使用 ?? 操作符确保 undefined 被处理为 null
+    } catch (error) {
+      console.error("Failed to fetch user:", error);
+      setUser(null);
+    }
+  }, []);
+
+  useEffect(() => {
+    fetchUser();
+  }, [fetchUser]);
+
+  const handleSignIn = () => {
+    signIn(); // 调用 signIn 进行登录
+  };
+
+  const handleSignOut = () => {
+    signOut(); // 调用 signOut 进行登出
+  };
 
   return (
     <header className="py-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -73,9 +105,11 @@ const Header = () => {
           <HeaderLinks />
           <ThemedButton />
           <LangSwitcher />
-          <Link href="/api/auth/signin">
-            <button>Sign In</button>
-          </Link>
+          {user ? (
+            <button onClick={handleSignOut} className="btn-signout">Logout</button>
+          ) : (
+            <button onClick={handleSignIn} className="btn-signin">Login</button>
+          )}
         </div>
 
         <div className="md:hidden">
@@ -144,9 +178,11 @@ const Header = () => {
                     <div className="flex items-center justify-end gap-x-5">
                       <ThemedButton />
                       <LangSwitcher />
-                      <Link href="/api/auth/signin">
-                        <button>Sign In</button>
-                      </Link>
+                      {user ? (
+                        <button onClick={handleSignOut} className="btn-signout">Logout</button>
+                      ) : (
+                        <button onClick={handleSignIn} className="btn-signin">Login</button>
+                      )}
                     </div>
                   </div>
                 </div>
