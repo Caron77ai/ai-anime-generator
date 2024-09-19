@@ -1,5 +1,9 @@
 .container {
+<<<<<<< HEAD
   max-width: 600px;
+=======
+  max-width: 800px;
+>>>>>>> dev
   margin: 0 auto;
   padding: 20px;
 }
@@ -9,10 +13,16 @@
   height: 100px;
   margin-bottom: 10px;
   padding: 10px;
+<<<<<<< HEAD
+=======
+  border: 1px solid #ccc;
+  border-radius: 4px;
+>>>>>>> dev
 }
 
 .button {
   padding: 10px 20px;
+<<<<<<< HEAD
   background-color: #4CAF50;
   color: white;
   border: none;
@@ -21,12 +31,35 @@
 
 .button:disabled {
   background-color: #cccccc;
+=======
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0051a2;
+}
+
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+>>>>>>> dev
 }
 
 .result {
   margin-top: 20px;
 }
 
+<<<<<<< HEAD
 .image {
   max-width: 100%;
   height: auto;
@@ -41,10 +74,33 @@
   border-top-color: #fff;
   animation: spin 1s linear infinite;
   margin-left: 8px;
+=======
+.spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, .3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+  margin-left: 10px;
+  vertical-align: middle;
+>>>>>>> dev
 }
 
 @keyframes spin {
   to {
+<<<<<<< HEAD
     transform: rotate(360deg);
+=======
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+>>>>>>> dev
   }
 }

@@ -43,9 +43,10 @@ export default async function RootLayout({
   params: { lang: string[] | undefined };
 }) {
   return (
-    <ClerkProvider>
-      <html lang={(lang && lang[0]) || defaultLocale} suppressHydrationWarning>
-        <head />
+
+    <html lang={(lang && lang[0]) || defaultLocale} suppressHydrationWarning>
+      <head />
+      <ClerkProvider>
         <body
           className={cn(
             "min-h-screen bg-background font-sans antialiased",
@@ -72,7 +73,7 @@ export default async function RootLayout({
             </>
           )}
         </body>
-      </html>
-    </ClerkProvider>
+      </ClerkProvider>
+    </html>
   );
 }

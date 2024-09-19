@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { NextRequest } from "next/server";
 import { defaultLocale, locales } from "./lib/i18n";
 
@@ -38,13 +39,23 @@ export const config = {
 };
 =======
 import { authMiddleware } from "@clerk/nextjs/server";
+=======
+import { clerkMiddleware } from '@clerk/nextjs/server'
+>>>>>>> dev
 
-export default authMiddleware({
-  // 可选：配置需要公开访问的路由
-  publicRoutes: ["/", "/api/(.*)"],
-});
+export default clerkMiddleware()
 
 export const config = {
+<<<<<<< HEAD
   matcher: ["/((?!.+\\.[\\w]+$|_next).*)", "/", "/(api|trpc)(.*)"],
 };
+>>>>>>> dev
+=======
+  matcher: [
+    // Skip Next.js internals and all static files, unless found in search params
+    '/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)',
+    // Always run for API routes
+    '/(api|trpc)(.*)',
+  ],
+}
 >>>>>>> dev

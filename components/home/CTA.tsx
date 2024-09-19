@@ -1,30 +1,34 @@
 /* eslint-disable react/no-unescaped-entities */
-import CTAButton from "@/components/home/CTAButton";
-import { RoughNotation } from "react-rough-notation";
+import CTAButton from "./CTAButton";
 
-const CTA = ({ locale, CTALocale }: { locale: any; CTALocale: any }) => {
+interface CTAProps {
+  locale: {
+    title: string;
+    description: string;
+  };
+  CTALocale: {
+    title: string;
+  };
+}
+
+export default function CTA({ locale, CTALocale }: CTAProps) {
   return (
-    <section className="flex flex-col justify-center max-w-[88%] items-center py-16 gap-12">
-      <div className="flex flex-col text-center gap-4">
-        <h2 className="text-center">{locale.title}</h2>
-        <p className="text-large text-default-500">
-          <RoughNotation type="box" color="#b71c1c" show={true}>
-            {locale.description1}
-          </RoughNotation>{" "}
-          {locale.description2}{" "}
-          <RoughNotation type="box" color="#b71c1c" show={true}>
-            {locale.description3}
-          </RoughNotation>{" "}
-          {locale.description4}{" "}
-          <RoughNotation type="box" color="#b71c1c" show={true}>
-            {locale.description5}
-          </RoughNotation>
-          {locale.description6}
-        </p>
+    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
+        <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
+          <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+              {locale.title}
+            </h2>
+            <p className="text-base text-gray-700 md:text-lg">
+              {locale.description}
+            </p>
+          </div>
+          <div>
+            <CTAButton locale={CTALocale} />
+          </div>
+        </div>
       </div>
-      <CTAButton locale={CTALocale} />
-    </section>
+    </div>
   );
-};
-
-export default CTA;
+}

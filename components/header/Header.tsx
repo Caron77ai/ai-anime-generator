@@ -15,12 +15,16 @@ import { useCallback, useEffect, useState } from "react";
 import { CgClose } from "react-icons/cg";
 import { ThemedButton } from "../ThemedButton";
 
+<<<<<<< HEAD
 interface User {
   id?: string;
   name?: string | null;
   email?: string | null;
   image?: string | null;
 }
+=======
+// 删除 User 接口,因为我们不再使用它
+>>>>>>> dev
 
 const links = [
   {
@@ -39,6 +43,7 @@ const links = [
     label: "FAQ",
     href: "#FAQ",
   },
+  // 移除 "生成图片" 的链接
 ];
 
 interface HeaderProps {
@@ -47,6 +52,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+<<<<<<< HEAD
   const [user, setUser] = useState<User | null>(null);
 
   const fetchUser = useCallback(async () => {
@@ -70,6 +76,8 @@ const Header: React.FC<HeaderProps> = ({ children }) => {
   const handleSignOut = () => {
     signOut(); // 调用 signOut 进行登出
   };
+=======
+>>>>>>> dev
 
   return (
     <header className="py-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -123,7 +131,7 @@ const Header: React.FC<HeaderProps> = ({ children }) => {
           <SignedOut>
             <SignInButton mode="modal">
               <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
-                Sign In
+                登录
               </button>
             </SignInButton>
           </SignedOut>
@@ -209,7 +217,7 @@ const Header: React.FC<HeaderProps> = ({ children }) => {
                       <SignedOut>
                         <SignInButton mode="modal">
                           <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
-                            Sign In
+                            登录
                           </button>
                         </SignInButton>
                       </SignedOut>

@@ -29,14 +29,55 @@ const dictionaries: any = {
   ru: () => import("@/locales/ru.json").then((module) => module.default),
 };
 
-export const getDictionary = async (locale: string) => {
-  if (["zh-CN", "zh-TW", "zh-HK"].includes(locale)) {
-    locale = "zh";
-  }
+export async function getDictionary(locale: string) {
+  // 如果传入的 locale 不在 dictionaries 中，使用默认语言
+  const dictionaryFunction = dictionaries[locale] || dictionaries[defaultLocale];
 
-  if (!Object.keys(dictionaries).includes(locale)) {
-    locale = "en";
+  try {
+    const dict = await dictionaryFunction();
+    return {
+      // ... 其他翻译
+      AnimeGenerator: {
+        title: dict.animeGeneratorTitle || "Generate Anime Image",
+        description: dict.animeGeneratorDescription || "Enter a description to generate an anime image:",
+        generateButton: dict.animeGeneratorGenerateButton || "Generate",
+        generatingButton: dict.animeGeneratorGeneratingButton || "Generating...",
+        resultTitle: dict.animeGeneratorResultTitle || "Generated Image",
+        inputPlaceholder: dict.animeGeneratorInputPlaceholder || "Enter your description here",
+        errorMessage: dict.animeGeneratorErrorMessage || "An error occurred while generating the image",
+      },
+      // 添加其他需要的翻译
+      Hero: dict.Hero || {},
+      CTAButton: dict.CTAButton || {},
+      SocialProof: dict.SocialProof || {},
+      Feature: dict.Feature || {},
+      Pricing: dict.Pricing || {},
+      WallOfLove: dict.WallOfLove || {},
+      FAQ: dict.FAQ || {},
+      CTA: dict.CTA || {},
+    };
+  } catch (error) {
+    console.error(`Failed to load dictionary for locale: ${locale}`, error);
+    // 如果加载失败，返回一个包含默认值的对象
+    return {
+      AnimeGenerator: {
+        title: "Generate Anime Image",
+        description: "Enter a description to generate an anime image:",
+        generateButton: "Generate",
+        generatingButton: "Generating...",
+        resultTitle: "Generated Image",
+        inputPlaceholder: "Enter your description here",
+        errorMessage: "An error occurred while generating the image",
+      },
+      // 其他翻译项使用空对象
+      Hero: {},
+      CTAButton: {},
+      SocialProof: {},
+      Feature: {},
+      Pricing: {},
+      WallOfLove: {},
+      FAQ: {},
+      CTA: {},
+    };
   }
-
-  return dictionaries[locale]();
-};
+}
