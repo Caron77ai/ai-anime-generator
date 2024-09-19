@@ -39,6 +39,7 @@
   },
   "CTAButton": {
     "title": "Try for free!"
+<<<<<<< HEAD
   },
   "AnimeGenerator": {
     "title": "Anime Generator",
@@ -47,5 +48,7 @@
     "generatingButton": "Generating...",
     "resultTitle": "Generated Anime:",
     "inputPlaceholder": "Describe the anime scene you want to generate..."
+=======
+>>>>>>> dev
   }
 }

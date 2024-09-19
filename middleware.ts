@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { NextRequest } from "next/server";
 import { defaultLocale, locales } from "./lib/i18n";
 
@@ -35,3 +36,15 @@ export const config = {
     '/((?!api|_next/static|_next/image|.*\\.(?:ico|png|jpg|jpeg|svg|gif|webp|js|css|woff|woff2|ttf|eot)).*)'
   ]
 };
+=======
+import { authMiddleware } from "@clerk/nextjs/server";
+
+export default authMiddleware({
+  // 可选：配置需要公开访问的路由
+  publicRoutes: ["/", "/api/(.*)"],
+});
+
+export const config = {
+  matcher: ["/((?!.+\\.[\\w]+$|_next).*)", "/", "/(api|trpc)(.*)"],
+};
+>>>>>>> dev
