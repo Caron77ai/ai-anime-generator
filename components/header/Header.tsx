@@ -6,16 +6,11 @@ import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 import { MenuIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useCallback, useEffect, useState } from "react";
+import { useState } from "react";
 import { CgClose } from "react-icons/cg";
 import { ThemedButton } from "../ThemedButton";
 
-interface User {
-  id?: string;
-  name?: string | null;
-  email?: string | null;
-  image?: string | null;
-}
+// 删除 User 接口,因为我们不再使用它
 
 const links = [
   {
@@ -34,6 +29,7 @@ const links = [
     label: "FAQ",
     href: "#FAQ",
   },
+  // 移除 "生成图片" 的链接
 ];
 
 interface HeaderProps {
@@ -42,23 +38,6 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [user, setUser] = useState<User | null>(null);
-
-  const fetchUser = useCallback(async () => {
-    try {
-      // 注意: 这里需要替换为实际的获取用户信息的方法
-      // const userData = await getCurrentUser();
-      // setUser(userData ?? null);
-      setUser(null); // 临时设置为 null
-    } catch (error) {
-      console.error("Failed to fetch user:", error);
-      setUser(null);
-    }
-  }, []);
-
-  useEffect(() => {
-    fetchUser();
-  }, [fetchUser]);
 
   return (
     <header className="py-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -105,7 +84,7 @@ const Header: React.FC<HeaderProps> = ({ children }) => {
           <SignedOut>
             <SignInButton mode="modal">
               <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
-                Sign In
+                登录
               </button>
             </SignInButton>
           </SignedOut>
@@ -183,7 +162,7 @@ const Header: React.FC<HeaderProps> = ({ children }) => {
                       <SignedOut>
                         <SignInButton mode="modal">
                           <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
-                            Sign In
+                            登录
                           </button>
                         </SignInButton>
                       </SignedOut>
