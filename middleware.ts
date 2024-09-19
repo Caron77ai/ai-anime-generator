@@ -1,22 +1,10 @@
-import { locales } from "./lib/i18n";
+import { authMiddleware } from "@clerk/nextjs/server";
 
-import { NextRequest } from "next/server";
-
-export function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl;
-
-  const isExit = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-  );
-
-  if (isExit) return;
-
-  request.nextUrl.pathname = `/`;
-  return Response.redirect(request.nextUrl);
-}
+export default authMiddleware({
+  // 可选：配置需要公开访问的路由
+  publicRoutes: ["/", "/api/(.*)"],
+});
 
 export const config = {
-  matcher: [
-    '/((?!api|_next/static|_next/image|.*\\.(?:ico|png|jpg|jpeg|svg|gif|webp|js|css|woff|woff2|ttf|eot)).*)'
-  ]
+  matcher: ["/((?!.+\\.[\\w]+$|_next).*)", "/", "/(api|trpc)(.*)"],
 };

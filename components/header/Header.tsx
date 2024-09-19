@@ -2,6 +2,7 @@
 import HeaderLinks from "@/components/header/HeaderLinks";
 import { LangSwitcher } from "@/components/header/LangSwitcher";
 import { siteConfig } from "@/config/site";
+import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 import { MenuIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -28,7 +29,11 @@ const links = [
   },
 ];
 
-const Header = () => {
+interface HeaderProps {
+  children?: React.ReactNode;
+}
+
+const Header: React.FC<HeaderProps> = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <header className="py-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -72,6 +77,16 @@ const Header = () => {
           <HeaderLinks />
           <ThemedButton />
           <LangSwitcher />
+          <SignedOut>
+            <SignInButton mode="modal">
+              <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
+                Sign In
+              </button>
+            </SignInButton>
+          </SignedOut>
+          <SignedIn>
+            <UserButton afterSignOutUrl="/" />
+          </SignedIn>
         </div>
 
         <div className="md:hidden">
@@ -140,6 +155,16 @@ const Header = () => {
                     <div className="flex items-center justify-end gap-x-5">
                       <ThemedButton />
                       <LangSwitcher />
+                      <SignedOut>
+                        <SignInButton mode="modal">
+                          <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
+                            Sign In
+                          </button>
+                        </SignInButton>
+                      </SignedOut>
+                      <SignedIn>
+                        <UserButton afterSignOutUrl="/" />
+                      </SignedIn>
                     </div>
                   </div>
                 </div>
@@ -148,6 +173,7 @@ const Header = () => {
           )}
         </div>
       </nav>
+      {children}
     </header>
   );
 };
