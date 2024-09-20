@@ -84,7 +84,7 @@ const Header: React.FC<HeaderProps> = ({ children }) => {
           <SignedOut>
             <SignInButton mode="modal">
               <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
-                登录
+                Login
               </button>
             </SignInButton>
           </SignedOut>
