@@ -39,16 +39,5 @@
   },
   "CTAButton": {
     "title": "Try for free!"
-<<<<<<< HEAD
-  },
-  "AnimeGenerator": {
-    "title": "Anime Generator",
-    "description": "Create your own unique anime art with our AI-powered generator.",
-    "generateButton": "Generate Anime",
-    "generatingButton": "Generating...",
-    "resultTitle": "Generated Anime:",
-    "inputPlaceholder": "Describe the anime scene you want to generate..."
-=======
->>>>>>> dev
   }
 }
