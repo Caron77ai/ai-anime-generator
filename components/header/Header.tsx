@@ -2,29 +2,15 @@
 import HeaderLinks from "@/components/header/HeaderLinks";
 import { LangSwitcher } from "@/components/header/LangSwitcher";
 import { siteConfig } from "@/config/site";
-<<<<<<< HEAD
-import { getCurrentUser } from "@/lib/session";
-=======
 import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
->>>>>>> dev
 import { MenuIcon } from "lucide-react";
-import { signIn, signOut } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
-import { useCallback, useEffect, useState } from "react";
+import { useState } from "react";
 import { CgClose } from "react-icons/cg";
 import { ThemedButton } from "../ThemedButton";
 
-<<<<<<< HEAD
-interface User {
-  id?: string;
-  name?: string | null;
-  email?: string | null;
-  image?: string | null;
-}
-=======
 // 删除 User 接口,因为我们不再使用它
->>>>>>> dev
 
 const links = [
   {
@@ -52,32 +38,6 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-<<<<<<< HEAD
-  const [user, setUser] = useState<User | null>(null);
-
-  const fetchUser = useCallback(async () => {
-    try {
-      const userData = await getCurrentUser();
-      setUser(userData ?? null); // 使用 ?? 操作符确保 undefined 被处理为 null
-    } catch (error) {
-      console.error("Failed to fetch user:", error);
-      setUser(null);
-    }
-  }, []);
-
-  useEffect(() => {
-    fetchUser();
-  }, [fetchUser]);
-
-  const handleSignIn = () => {
-    signIn(); // 调用 signIn 进行登录
-  };
-
-  const handleSignOut = () => {
-    signOut(); // 调用 signOut 进行登出
-  };
-=======
->>>>>>> dev
 
   return (
     <header className="py-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -121,13 +81,6 @@ const Header: React.FC<HeaderProps> = ({ children }) => {
           <HeaderLinks />
           <ThemedButton />
           <LangSwitcher />
-<<<<<<< HEAD
-          {user ? (
-            <button onClick={handleSignOut} className="btn-signout">Logout</button>
-          ) : (
-            <button onClick={handleSignIn} className="btn-signin">Login</button>
-          )}
-=======
           <SignedOut>
             <SignInButton mode="modal">
               <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
@@ -138,7 +91,6 @@ const Header: React.FC<HeaderProps> = ({ children }) => {
           <SignedIn>
             <UserButton afterSignOutUrl="/" />
           </SignedIn>
->>>>>>> dev
         </div>
 
         <div className="md:hidden">
@@ -207,13 +159,6 @@ const Header: React.FC<HeaderProps> = ({ children }) => {
                     <div className="flex items-center justify-end gap-x-5">
                       <ThemedButton />
                       <LangSwitcher />
-<<<<<<< HEAD
-                      {user ? (
-                        <button onClick={handleSignOut} className="btn-signout">Logout</button>
-                      ) : (
-                        <button onClick={handleSignIn} className="btn-signin">Login</button>
-                      )}
-=======
                       <SignedOut>
                         <SignInButton mode="modal">
                           <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
@@ -224,7 +169,6 @@ const Header: React.FC<HeaderProps> = ({ children }) => {
                       <SignedIn>
                         <UserButton afterSignOutUrl="/" />
                       </SignedIn>
->>>>>>> dev
                     </div>
                   </div>
                 </div>

@@ -7,46 +7,20 @@ import ScrollingLogos from "@/components/home/ScrollingLogos";
 import SocialProof from "@/components/home/SocialProof";
 import WallOfLove from "@/components/home/WallOfLove";
 import { defaultLocale, getDictionary } from "@/lib/i18n";
-import { getCurrentUser } from "@/lib/session";
-import Link from 'next/link';
 
 export default async function LangHome({
   params: { lang },
 }: {
   params: { lang: string };
 }) {
-  console.log("Rendering LangHome (HomePage)", { lang });
-
-  // 简化语言处理逻辑
-  const langName = lang !== "index" ? lang : defaultLocale;
-
-  console.log("Determined langName:", langName);
+  // const langName = (lang && lang[0]) || defaultLocale;
+  let langName =
+    lang && lang[0] && lang[0] !== "index" ? lang[0] : defaultLocale;
 
   const dict = await getDictionary(langName);
 
-  // 获取当前登录的用户信息
-  const user = await getCurrentUser();
-
   return (
     <>
-      {/* Header with User Info and Login/Logout Button */}
-      <header>
-        <nav>
-          {user ? (
-            <>
-              <p>Welcome, {user.name || user.email}!</p>
-              <Link href="/api/auth/signout">
-                <button>Logout</button>
-              </Link>
-            </>
-          ) : (
-            <Link href="/api/auth/signin">
-              <button>Login</button>
-            </Link>
-          )}
-        </nav>
-      </header>
-
       {/* Hero Section */}
       <Hero locale={dict.Hero} CTALocale={dict.CTAButton} />
       <SocialProof locale={dict.SocialProof} />
