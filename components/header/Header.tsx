@@ -45,8 +45,8 @@ const Header: React.FC<HeaderProps> = ({ children }) => {
         <div className="flex items-center md:gap-x-12">
           <Link
             href="/"
-            aria-label="Landing Page Boilerplate"
-            title="Landing Page Boilerplate"
+            aria-label="AI Anime Generator"
+            title="AI Anime Generator"
             className="flex items-center space-x-1 font-bold"
           >
             <Image
@@ -162,7 +162,7 @@ const Header: React.FC<HeaderProps> = ({ children }) => {
                       <SignedOut>
                         <SignInButton mode="modal">
                           <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
-                            登录
+                            Login
                           </button>
                         </SignInButton>
                       </SignedOut>
