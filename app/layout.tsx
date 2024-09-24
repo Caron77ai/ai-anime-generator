@@ -11,7 +11,6 @@ import "@/styles/globals.css";
 import "@/styles/loading.css";
 import { ClerkProvider } from '@clerk/nextjs';
 import { Analytics } from "@vercel/analytics/react";
-import { Viewport } from "next";
 import { Inter as FontSans } from "next/font/google";
 
 export const fontSans = FontSans({
@@ -31,7 +30,7 @@ export const metadata = {
   twitter: siteConfig.twitter,
 };
 
-export const viewport: Viewport = {
+export const viewport = {
   themeColor: siteConfig.themeColors,
 };
 
@@ -43,7 +42,6 @@ export default async function RootLayout({
   params: { lang: string[] | undefined };
 }) {
   return (
-
     <html lang={(lang && lang[0]) || defaultLocale} suppressHydrationWarning>
       <head />
       <ClerkProvider>
