@@ -39,5 +39,21 @@
   },
   "CTAButton": {
     "title": "Try for free!"
+  },
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "content": "/privacy-policy-en"
+  },
+  "Footer": {
+    "privacyPolicy": "Privacy Policy"
+  },
+  "AnimeGenerator": {
+    "title": "Anime Generator",
+    "description": "Generate your own anime images",
+    "generateButton": "Generate",
+    "generatingButton": "Generating...",
+    "resultTitle": "Generated Image",
+    "inputPlaceholder": "Enter your description here",
+    "errorMessage": "An error occurred. Please try again."
   }
 }

@@ -46,6 +46,27 @@ export async function getDictionary(locale: string) {
         inputPlaceholder: dict.animeGeneratorInputPlaceholder || "Enter your description here",
         errorMessage: dict.animeGeneratorErrorMessage || "An error occurred while generating the image",
       },
+      PrivacyPolicy: {
+        title: dict.PrivacyPolicy?.title || "Privacy Policy",
+        introduction: dict.PrivacyPolicy?.introduction || "This Privacy Policy describes how your personal information is collected, used, and shared when you visit or make a purchase from our website.",
+        personalInfo: {
+          title: dict.PrivacyPolicy?.personalInfo?.title || "Personal information we collect",
+          content: dict.PrivacyPolicy?.personalInfo?.content || "When you visit the Site, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device."
+        },
+        useOfInfo: {
+          title: dict.PrivacyPolicy?.useOfInfo?.title || "How we use your personal information",
+          content: dict.PrivacyPolicy?.useOfInfo?.content || "We use the information that we collect generally to fulfill any orders placed through the Site (including processing your payment information, arranging for shipping, and providing you with invoices and/or order confirmations)."
+        },
+        sharingInfo: {
+          title: dict.PrivacyPolicy?.sharingInfo?.title || "Sharing your personal Information",
+          content: dict.PrivacyPolicy?.sharingInfo?.content || "We share your Personal Information with service providers to help us provide our services and fulfill our contracts with you."
+        },
+        changes: {
+          title: dict.PrivacyPolicy?.changes?.title || "Changes",
+          content: dict.PrivacyPolicy?.changes?.content || "We may update this privacy policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal or regulatory reasons."
+        },
+        contactInfo: dict.PrivacyPolicy?.contactInfo || "For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at [your-email@example.com]."
+      },
       // 添加其他需要的翻译
       Hero: dict.Hero || {},
       CTAButton: dict.CTAButton || {},
