@@ -1,0 +1,6 @@
+### 获取 Clerk 用户信息
+
+GET https://api.clerk.com/v1/users/user_id_here
+Content-Type: application/json
+Authorization: Bearer sk_test_4YKiCB4T0tpOYOH9UyGYeLvNGQBnmH0QPAny4jVS6o
+
