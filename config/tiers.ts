@@ -50,7 +50,7 @@ export const TIERS_EN: Array<Tier> = [
     buttonText: "Subscribe",
     buttonColor: "default",
     buttonVariant: "flat",
-    plan_id: "price_1Q7UA1P1MdvuF76FEZgqSllT", // 将 priceId 改为 plan_id
+    plan_id: "price_1Q7U7vP1MdvuF76F4R2GSjQZ", // 已更新
   },
   {
     key: TiersEnum.Pro,
@@ -67,7 +67,7 @@ export const TIERS_EN: Array<Tier> = [
     buttonText: "Subscribe",
     buttonColor: "default",
     buttonVariant: "flat",
-    plan_id: "price_1QD3r1P1MdvuF76FKlshOgeO", // 将 priceId 改为 plan_id
+    plan_id: "price_1QD1G4P1MdvuF76FjnZuNjUK", // 已更新
   },
 ];
 
@@ -104,7 +104,7 @@ const TIERS_ZH: Tier[] = [
     buttonText: "订阅",
     buttonColor: "default",
     buttonVariant: "flat",
-    plan_id: "price_1Q7UA1P1MdvuF76FEZgqSllT", // 将 priceId 改为 plan_id
+    plan_id: "price_1Q7U7vP1MdvuF76F4R2GSjQZ", // 已更新
   },
   {
     key: TiersEnum.Pro,
@@ -121,7 +121,7 @@ const TIERS_ZH: Tier[] = [
     buttonText: "订阅",
     buttonColor: "default",
     buttonVariant: "flat",
-    plan_id: "price_1QD3r1P1MdvuF76FKlshOgeO", // 将 priceId 改为 plan_id
+    plan_id: "price_1QD1G4P1MdvuF76FjnZuNjUK", // 已更新
   },
 ];
 
@@ -157,7 +157,7 @@ export const TIERS_JA: Array<Tier> = [
     buttonText: "購読する",
     buttonColor: "default",
     buttonVariant: "flat",
-    plan_id: "price_1Q7UA1P1MdvuF76FEZgqSllT", // 将 priceId 改为 plan_id
+    plan_id: "price_1Q7U7vP1MdvuF76F4R2GSjQZ", // 已更新
   },
   {
     key: TiersEnum.Pro,
@@ -174,7 +174,7 @@ export const TIERS_JA: Array<Tier> = [
     buttonText: "購読する",
     buttonColor: "default",
     buttonVariant: "flat",
-    plan_id: "price_1QD3r1P1MdvuF76FKlshOgeO", // 将 priceId 改为 plan_id
+    plan_id: "price_1QD1G4P1MdvuF76FjnZuNjUK", // 已更新
   },
 ];
 
@@ -210,7 +210,7 @@ export const TIERS_AR: Array<Tier> = [
     buttonText: "اشترك الآن",
     buttonColor: "default",
     buttonVariant: "flat",
-    plan_id: "price_1Q7UA1P1MdvuF76FEZgqSllT", // 将 priceId 改为 plan_id
+    plan_id: "price_1Q7U7vP1MdvuF76F4R2GSjQZ", // 已更新
   },
   {
     key: TiersEnum.Pro,
@@ -227,7 +227,7 @@ export const TIERS_AR: Array<Tier> = [
     buttonText: "اشترك الآن",
     buttonColor: "default",
     buttonVariant: "flat",
-    plan_id: "price_1QD3r1P1MdvuF76FKlshOgeO", // 将 priceId 改为 plan_id
+    plan_id: "price_1QD1G4P1MdvuF76FjnZuNjUK", // 已更新
   },
 ];
 
@@ -264,7 +264,7 @@ export const TIERS_ES: Array<Tier> = [
     buttonText: "Suscribirse",
     buttonColor: "default",
     buttonVariant: "flat",
-    plan_id: "price_1Q7UA1P1MdvuF76FEZgqSllT", // 将 priceId 改为 plan_id
+    plan_id: "price_1Q7U7vP1MdvuF76F4R2GSjQZ", // 已更新
   },
   {
     key: TiersEnum.Pro,
@@ -281,7 +281,7 @@ export const TIERS_ES: Array<Tier> = [
     buttonText: "Suscribirse",
     buttonColor: "default",
     buttonVariant: "flat",
-    plan_id: "price_1QD3r1P1MdvuF76FKlshOgeO", // 将 priceId 改为 plan_id
+    plan_id: "price_1QD1G4P1MdvuF76FjnZuNjUK", // 已更新
   },
 ];
 
@@ -318,7 +318,7 @@ export const TIERS_RU: Array<Tier> = [
     buttonText: "Подписаться",
     buttonColor: "default",
     buttonVariant: "flat",
-    plan_id: "price_1Q7UA1P1MdvuF76FEZgqSllT", // 将 priceId 改为 plan_id
+    plan_id: "price_1Q7U7vP1MdvuF76F4R2GSjQZ", // 已更新
   },
   {
     key: TiersEnum.Pro,
@@ -335,7 +335,7 @@ export const TIERS_RU: Array<Tier> = [
     buttonText: "Подписаться",
     buttonColor: "default",
     buttonVariant: "flat",
-    plan_id: "price_1QD3r1P1MdvuF76FKlshOgeO", // 将 priceId 改为 plan_id
+    plan_id: "price_1QD1G4P1MdvuF76FjnZuNjUK", // 已更新
   },
 ];
 
