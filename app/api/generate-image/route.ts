@@ -10,10 +10,6 @@ const replicate = new Replicate({
 
 export const maxDuration = 60;
 
-<<<<<<< HEAD
-export async function POST(request: Request) {
-  const { description } = await request.json();
-=======
 interface RequestBody {
   description: string;
 }
@@ -23,7 +19,6 @@ export async function POST(request: NextRequest) {
   if (!userId) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
->>>>>>> stripe
 
   try {
     // 获取用户的图片使用情况
