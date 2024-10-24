@@ -39,5 +39,16 @@
   },
   "CTAButton": {
     "title": "無料で試す！"
+  },
+  "AnimeGenerator": {
+    "title": "アニメ画像ジェネレーター",
+    "description": "アニメ画像を生成する説明を入力してください：",
+    "generateButton": "生成",
+    "generatingButton": "生成中...",
+    "resultTitle": "生成された画像",
+    "inputPlaceholder": "ここに説明を入力してください...",
+    "errorMessage": "エラーが発生しました。もう一度お試しください。",
+    "invalidResponseFormat": "無効な応答形式",
+    "remainingGenerations": "使用済み生成回数：{used}/{total}"
   }
 }

@@ -131,3 +131,6 @@ dist
 
 # .gitignore
 .env.local
+
+# Ignore all test.rest files
+**/test.rest

@@ -39,5 +39,16 @@
   },
   "CTAButton": {
     "title": "免费试用！"
+  },
+  "AnimeGenerator": {
+    "title": "动漫图像生成器",
+    "description": "输入描述以生成动漫图像：",
+    "generateButton": "生成",
+    "generatingButton": "生成中...",
+    "resultTitle": "生成的图像",
+    "inputPlaceholder": "在此输入您的描述...",
+    "errorMessage": "发生错误。请重试。",
+    "invalidResponseFormat": "无效的响应格式",
+    "remainingGenerations": "已使用生成次数：{used}/{total}"
   }
 }

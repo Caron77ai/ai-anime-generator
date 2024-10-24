@@ -39,5 +39,16 @@
   },
   "CTAButton": {
     "title": "¡Prueba gratis!"
+  },
+  "AnimeGenerator": {
+    "title": "Generador de Imágenes de Anime",
+    "description": "Ingrese una descripción para generar una imagen de anime:",
+    "generateButton": "Generar",
+    "generatingButton": "Generando...",
+    "resultTitle": "Imagen Generada",
+    "inputPlaceholder": "Ingrese su descripción aquí...",
+    "errorMessage": "Ocurrió un error. Por favor, inténtelo de nuevo.",
+    "invalidResponseFormat": "Formato de respuesta inválido",
+    "remainingGenerations": "Generaciones utilizadas: {used}/{total}"
   }
 }

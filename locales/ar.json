@@ -39,5 +39,16 @@
   },
   "CTAButton": {
     "title": "جربه مجاناً!"
+  },
+  "AnimeGenerator": {
+    "title": "مولد صور الأنمي",
+    "description": "أدخل وصفًا لإنشاء صورة أنمي:",
+    "generateButton": "إنشاء",
+    "generatingButton": "جاري الإنشاء...",
+    "resultTitle": "الصورة المنشأة",
+    "inputPlaceholder": "أدخل وصفك هنا...",
+    "errorMessage": "حدث خطأ. يرجى المحاولة مرة أخرى.",
+    "invalidResponseFormat": "تنسيق استجابة غير صالح",
+    "remainingGenerations": "الإنشاءات المستخدمة: {used}/{total}"
   }
 }

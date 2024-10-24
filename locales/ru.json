@@ -39,5 +39,16 @@
   },
   "CTAButton": {
     "title": "Попробуйте бесплатно!"
+  },
+  "AnimeGenerator": {
+    "title": "Генератор аниме-изображений",
+    "description": "Введите описание для создания аниме-изображения:",
+    "generateButton": "Создать",
+    "generatingButton": "Создание...",
+    "resultTitle": "Созданное изображение",
+    "inputPlaceholder": "Введите ваше описание здесь...",
+    "errorMessage": "Произошла ошибка. Пожалуйста, попробуйте еще раз.",
+    "invalidResponseFormat": "Недопустимый формат ответа",
+    "remainingGenerations": "Использовано генераций: {used}/{total}"
   }
 }
