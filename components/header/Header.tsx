@@ -2,34 +2,20 @@
 import HeaderLinks from "@/components/header/HeaderLinks";
 import { LangSwitcher } from "@/components/header/LangSwitcher";
 import { siteConfig } from "@/config/site";
-import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
+import { SignInButton, SignedIn, SignedOut, UserButton, useUser } from '@clerk/nextjs';
 import { MenuIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import { CgClose } from "react-icons/cg";
 import { ThemedButton } from "../ThemedButton";
 
-// 删除 User 接口,因为我们不再使用它
-
 const links = [
-  {
-    label: "Features",
-    href: "#Features",
-  },
-  {
-    label: "Pricing",
-    href: "#Pricing",
-  },
-  {
-    label: "Wall of Love",
-    href: "#WallOfLove",
-  },
-  {
-    label: "FAQ",
-    href: "#FAQ",
-  },
-  // 移除 "生成图片" 的链接
+  { label: "Features", href: "#Features" },
+  { label: "Pricing", href: "#Pricing" },
+  { label: "Wall of Love", href: "#WallOfLove" },
+  { label: "FAQ", href: "#FAQ" },
 ];
 
 interface HeaderProps {
@@ -38,6 +24,38 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { isSignedIn, user } = useUser();
+  const router = useRouter();
+
+  useEffect(() => {
+    const syncUserInfo = async () => {
+      if (isSignedIn && user) {
+        try {
+          const response = await fetch("/api/user/login", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              id: user.id,
+              email: user.primaryEmailAddress?.emailAddress,
+              username: user.username,
+              firstName: user.firstName,
+              lastName: user.lastName,
+            }),
+          });
+
+          if (!response.ok) {
+            console.error("同步用户信息失败");
+          }
+        } catch (error) {
+          console.error("同步用户信息时出错:", error);
+        }
+      }
+    };
+
+    syncUserInfo();
+  }, [isSignedIn, user]);
 
   return (
     <header className="py-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -89,6 +107,9 @@ const Header: React.FC<HeaderProps> = ({ children }) => {
             </SignInButton>
           </SignedOut>
           <SignedIn>
+            <Link href="/billing" className="text-gray-600 hover:text-gray-900">
+              Billing
+            </Link>
             <UserButton afterSignOutUrl="/" />
           </SignedIn>
         </div>
@@ -151,6 +172,17 @@ const Header: React.FC<HeaderProps> = ({ children }) => {
                         </Link>
                       </li>
                     ))}
+                    <SignedIn>
+                      <li>
+                        <Link
+                          href="/billing"
+                          className="font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          Billing
+                        </Link>
+                      </li>
+                    </SignedIn>
                   </ul>
                 </nav>
                 <div className="pt-4">

@@ -29,7 +29,7 @@ const dictionaries: any = {
   ru: () => import("@/locales/ru.json").then((module) => module.default),
 };
 
-export async function getDictionary(locale: string) {
+export async function getDictionary(locale: string): Promise<Dictionary> {
   // 如果传入的 locale 不在 dictionaries 中，使用默认语言
   const dictionaryFunction = dictionaries[locale] || dictionaries[defaultLocale];
 
@@ -45,6 +45,8 @@ export async function getDictionary(locale: string) {
         resultTitle: dict.animeGeneratorResultTitle || "Generated Image",
         inputPlaceholder: dict.animeGeneratorInputPlaceholder || "Enter your description here",
         errorMessage: dict.animeGeneratorErrorMessage || "An error occurred while generating the image",
+        invalidResponseFormat: dict.animeGeneratorInvalidResponseFormat || "Invalid response format",
+        remainingGenerations: dict.animeGeneratorRemainingGenerations || "Remaining generations: {used}/{total}",
       },
       PrivacyPolicy: {
         title: dict.PrivacyPolicy?.title || "Privacy Policy",
@@ -89,6 +91,29 @@ export async function getDictionary(locale: string) {
         resultTitle: "Generated Image",
         inputPlaceholder: "Enter your description here",
         errorMessage: "An error occurred while generating the image",
+        invalidResponseFormat: "Invalid response format",
+        remainingGenerations: "Remaining generations: {used}/{total}",
+      },
+      PrivacyPolicy: {
+        title: "Privacy Policy",
+        introduction: "This Privacy Policy describes how your personal information is collected, used, and shared when you visit or make a purchase from our website.",
+        personalInfo: {
+          title: "Personal information we collect",
+          content: "When you visit the Site, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device."
+        },
+        useOfInfo: {
+          title: "How we use your personal information",
+          content: "We use the information that we collect generally to fulfill any orders placed through the Site (including processing your payment information, arranging for shipping, and providing you with invoices and/or order confirmations)."
+        },
+        sharingInfo: {
+          title: "Sharing your personal Information",
+          content: "We share your Personal Information with service providers to help us provide our services and fulfill our contracts with you."
+        },
+        changes: {
+          title: "Changes",
+          content: "We may update this privacy policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal or regulatory reasons."
+        },
+        contactInfo: "For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at [your-email@example.com]."
       },
       // 其他翻译项使用空对象
       Hero: {},
@@ -102,3 +127,52 @@ export async function getDictionary(locale: string) {
     };
   }
 }
+
+// 添加或更新 AnimeGenerator 的类型定义
+export interface AnimeGeneratorDictionary {
+  title: string;
+  description: string;
+  generateButton: string;
+  generatingButton: string;
+  resultTitle: string;
+  inputPlaceholder: string;
+  errorMessage: string;
+  invalidResponseFormat?: string;
+  remainingGenerations: string;
+}
+
+// 更新主字典接口，也需要导出
+export interface Dictionary {
+  AnimeGenerator: AnimeGeneratorDictionary;
+  PrivacyPolicy: {
+    title: string;
+    introduction: string;
+    personalInfo: {
+      title: string;
+      content: string;
+    };
+    useOfInfo: {
+      title: string;
+      content: string;
+    };
+    sharingInfo: {
+      title: string;
+      content: string;
+    };
+    changes: {
+      title: string;
+      content: string;
+    };
+    contactInfo: string;
+  };
+  Hero: any;
+  CTAButton: any;
+  SocialProof: any;
+  Feature: any;
+  Pricing: any;
+  WallOfLove: any;
+  FAQ: any;
+  CTA: any;
+}
+
+

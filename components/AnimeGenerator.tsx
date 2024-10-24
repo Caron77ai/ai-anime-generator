@@ -2,7 +2,7 @@
 
 import styles from '@/styles/AnimeGenerator.module.css';
 import Image from 'next/image';
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 
 interface AnimeGeneratorProps {
   locale: {
@@ -13,6 +13,8 @@ interface AnimeGeneratorProps {
     resultTitle: string;
     inputPlaceholder: string;
     errorMessage: string;
+    invalidResponseFormat?: string; // 添加可选属性
+    remainingGenerations: string;
   };
 }
 
@@ -21,11 +23,33 @@ const AnimeGenerator: React.FC<AnimeGeneratorProps> = ({ locale }) => {
   const [generatedImage, setGeneratedImage] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [usedGenerations, setUsedGenerations] = useState(0);
+  const [totalGenerations, setTotalGenerations] = useState(10);
 
-  const handleSubmit = useCallback(async (e: React.FormEvent) => {
+  const fetchRemainingGenerations = useCallback(async () => {
+    try {
+      const response = await fetch('/api/remaining-generations');
+      if (response.ok) {
+        const data: { remainingFreeGenerations: number; remainingPaidGenerations: number; totalRemainingGenerations: number } = await response.json();
+        setUsedGenerations(10 - data.remainingFreeGenerations);
+        setTotalGenerations(data.totalRemainingGenerations);
+      } else {
+        console.error('获取剩余生成次数失败: 服务器返回错误');
+      }
+    } catch (error) {
+      console.error('获取剩余生成次数失败:', error);
+    }
+  }, []);
+
+  useEffect(() => {
+    fetchRemainingGenerations();
+  }, [fetchRemainingGenerations]);
+
+  const handleSubmit = useCallback(async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsLoading(true);
     setError(null);
+    setGeneratedImage(null);
+    setIsLoading(true);
 
     try {
       const response = await fetch('/api/generate-image', {
@@ -36,24 +60,27 @@ const AnimeGenerator: React.FC<AnimeGeneratorProps> = ({ locale }) => {
         body: JSON.stringify({ description }),
       });
 
-      const data = await response.json();
-
       if (response.ok) {
+        const data = await response.json() as { imageUrl: string };
         setGeneratedImage(data.imageUrl);
+        fetchRemainingGenerations();
       } else {
-        setError(data.error || locale.errorMessage);
+        const errorData = await response.json() as { error: string };
+        setError(errorData.error || locale.errorMessage);
       }
     } catch (error) {
-      console.error('Error generating anime:', error);
       setError(locale.errorMessage);
     } finally {
       setIsLoading(false);
     }
-  }, [description, locale.errorMessage]);
+  }, [description, locale.errorMessage, fetchRemainingGenerations]);
 
   return (
     <div className={styles.container}>
       <h1>{locale.title}</h1>
+      <p className={styles.remainingGenerations}>
+        {locale.remainingGenerations.replace('{used}', usedGenerations.toString()).replace('{total}', totalGenerations.toString())}
+      </p>
       <form onSubmit={handleSubmit}>
         <label htmlFor="description">{locale.description}</label>
         <textarea

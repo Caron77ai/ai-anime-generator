@@ -48,12 +48,14 @@
     "privacyPolicy": "Privacy Policy"
   },
   "AnimeGenerator": {
-    "title": "Anime Generator",
-    "description": "Generate your own anime images",
+    "title": "Anime Image Generator",
+    "description": "Enter a description to generate an anime image:",
     "generateButton": "Generate",
     "generatingButton": "Generating...",
     "resultTitle": "Generated Image",
-    "inputPlaceholder": "Enter your description here",
-    "errorMessage": "An error occurred. Please try again."
+    "inputPlaceholder": "Enter your description here...",
+    "errorMessage": "An error occurred. Please try again.",
+    "invalidResponseFormat": "Invalid response format",
+    "remainingGenerations": "Used generations: {used}/{total}"
   }
 }
