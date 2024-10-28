@@ -28,6 +28,21 @@ const Hero = ({ locale, CTALocale }: { locale: any; CTALocale: any }) => {
             {/* {siteConfig.description} */}
             {locale.description}
           </p>
+          {/* Product Hunt Badge */}
+          <a
+            href="https://www.producthunt.com/posts/ai-anime-generator-10?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-ai&#0045;anime&#0045;generator&#0045;10"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-6"
+          >
+            <img
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=546918&theme=light"
+              alt="AI Anime Generator - text to image anime image generator | Product Hunt"
+              style={{ width: '250px', height: '54px' }}
+              width="250"
+              height="54"
+            />
+          </a>
         </section>
       </motion.div>
       <CTAButton locale={CTALocale}></CTAButton>
