@@ -1,30 +1,56 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://aianimegenerators.com',
+  siteUrl: process.env.SITE_URL || 'https://aianimegenerators.com',
   generateRobotsTxt: true,
-  sitemapSize: 7000,
-  changefreq: 'daily',
-  priority: 0.7,
+  generateIndexSitemap: false,
+  outDir: 'public',
+  additionalPaths: async (config) => {
+    // 根据实际项目路由更新
+    const routes = [
+      '',                    // 首页
+      '/generate-image',     // 生成图片页面
+      '/billing',           // 账单页面
+      '/success',           // 支付成功页面
+      '/privacy-policy',    // 隐私政策
+      '/[[...lang]]',       // 多语言路由
+    ]
+
+    return routes.map((route) => ({
+      loc: route,
+      changefreq: route === '' ? 'daily' : 'weekly',
+      priority: route === '' ? 1.0 : 0.8,
+      lastmod: new Date().toISOString(),
+    }))
+  },
   exclude: [
     '/api/*',
-    '/server-sitemap.xml',
-    '/dashboard/*',
-    '/admin/*',
+    '/sign-in*',
+    '/sign-up*',
+    '/_*',
+    '/404',
+    '/500',
+    '/success*',  // 排除支付成功页面
+    '/billing*',  // 排除账单页面
   ],
   robotsTxtOptions: {
     policies: [
       {
         userAgent: '*',
-        allow: '/',
-        disallow: ['/api/*', '/dashboard/*', '/admin/*'],
+        allow: [
+          '/',
+          '/generate-image',
+          '/privacy-policy'
+        ],
+        disallow: [
+          '/api/*',
+          '/sign-in*',
+          '/sign-up*',
+          '/billing*',
+          '/success*',
+          '/admin/*',
+          '/private/*'
+        ]
       },
     ],
   },
-  additionalPaths: async (config) => [
-    { loc: '/', changefreq: 'daily', priority: 1.0 },
-    { loc: '/about', changefreq: 'monthly', priority: 0.8 },
-    { loc: '/pricing', changefreq: 'weekly', priority: 0.8 },
-    { loc: '/generator', changefreq: 'daily', priority: 0.9 },
-    { loc: '/blog', changefreq: 'weekly', priority: 0.8 },
-  ],
 } 
