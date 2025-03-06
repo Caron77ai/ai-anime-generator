@@ -1,34 +1,32 @@
 🌍 *[English](README.md) ∙ [简体中文](README-zh.md)*
 
 
-# [Landing page boilerplate](https://landingpage.weijunext.com/)
+# [AI Anime Generator](https://www.aianimegenerators.com/)
 
-A versatile landing page boilerplate, ideal for various projects and marketing campaigns.
+This is a template that helps you quickly build AI websites, supporting integration of various AI functionalities.
 
-Demo address：https://landingpage.weijunext.com
+Demo: https://www.aianimegenerators.com/
 
-Blog: 
-[我为独立开发者开发落地页模板（一）](https://juejin.cn/post/7344567650457010191)  
-[我为独立开发者开发落地页模板（二）](https://juejin.cn/post/7350200488455520267)
+[![AI Anime Generator](./public/og.png)](https://www.aianimegenerators.com/)
 
-[![Landing page boilerplate](./public/og.png)](https://landingpage.weijunext.com/)
+## Tech Stack
 
-## Tech Stack 
+AI Anime Generator is built with the following technologies:
 
-Landing page boilerplate is built on the following stack:
-
-- Next.js – Frontend/Backend
-- TailwindCSS – Styles
-- Google Analytics
-- Vercel - Hosting
-
+- Next.js – Frontend/Backend framework
+- TailwindCSS – Styling
+- Clerk – Authentication and user management
+- Stripe – Payment processing
+- Replicate API – AI image generation
+- Google Analytics – Data analysis
+- Vercel - Hosting service
 
 
-## Running Locally
+## Local Development
 
-After cloning the repo, you need to copy the `.env.example` file to create a `.env` file and fill in the required fields.
+After cloning the repository, you need to copy the `.env.example` file to create a `.env` file and fill in the necessary fields (especially the AI image generation API key).
 
-Then, run the application in the command line and it will be available at `http://localhost:3000`.
+Then, run the application in the command line, it will be available at `http://localhost:3000`.
 
 ```bash
 npm run dev
@@ -38,41 +36,30 @@ npm run dev
 
 Edit these files:
 - `.env` or `.env.local`
-- `config/site.ts`, fill in your website information.
-- `public`, change logo file
+- `config/site.ts`, fill in your website information
+- `public` directory, change logo files
 - `public/robots.txt`
 - `app/sitemap.ts`
 
+## One-Click Deployment
 
+Deploy with Vercel or Zeabur:
 
-## One-Click Deploy
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/ai-anime-generator&project-name=ai-anime-generator&repository-name=ai-anime-generator&demo-title=AIAnimeGenerator&demo-description=AI%20Anime%20Image%20Generator&demo-url=https://www.aianimegenerators.com&demo-image=https://www.aianimegenerators.com/og.png)
 
-Deploy the example using Vercel or Zeabur:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/weijunext/landing-page-boilerplate&project-name=&repository-name=landing-page-boilerplate&demo-title=LandingPageBoilerplate&demo-description=Landing%20page%20boilerplate.&demo-url=https://landingpage.weijunext.com&demo-image=https://landingpage.weijunext.com/og.png)
-
-[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/D92G1L)
 
 ## About Me
 
-**Full-Stack Engineer, Open-Source Next.js Artist & AI Enthusiast.**
+**AI Independent Developer**
 
-**全栈工程师，Next.js 开源手艺人，AI降临派。**
-
-[My Blog](https://weijunext.com)  
-[Github](https://github.com/weijunext)  
-[Twitter/X](https://twitter.com/weijunext)  
-[Twitter/X - En](https://twitter.com/wayne_dev)  
-[Medium](https://medium.com/@weijunext)  
-[掘金](https://juejin.cn/user/26044008768029)  
-[知乎](https://www.zhihu.com/people/mo-mo-mo-89-12-11)  
-[微信交流群](https://weijunext.com/make-a-friend)  
-
-If this project is helpful to you, star the repo and buy be a coffee, thank you.
-
-<a href="https://www.buymeacoffee.com/weijunext" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;" ></a>
+[Github](https://github.com/Caron77)  
+[Twitter/X](https://twitter.com/Caron7_7)  
 
 
-<a href="https://afdian.net/a/weijunext" target="_blank"><img src="./public/afd.png" alt="在爱发电支持我" style="height: 50px !important"></a>
+If this project helps you, please star the repository and consider sponsoring me, thank you.
 
-<img src="./public/zs.jpeg" alt="赞赏作者" style="height: 200px; width: 200px">
+<a href="https://www.buymeacoffee.com/yourusername" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;" ></a>
+
+<a href="https://afdian.net/a/yourafdianusername" target="_blank"><img src="./public/afd.png" alt="Support me on Afdian" style="height: 50px !important"></a>
+
+<img src="./public/zs.jpeg" alt="Appreciate the author" style="height: 200px; width: 200px">
