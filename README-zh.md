@@ -45,14 +45,14 @@ npm run dev
 
 使用 Vercel 部署示例：
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Caron77/ai-anime-generator&project-name=&repository-name=ai-anime-generator&demo-title=AIAnimeGenerator&demo-description=AI%20动漫图像生成器&demo-url=您的演示链接&demo-image=您的OG图片链接)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/ai-anime-generator&project-name=ai-anime-generator&repository-name=ai-anime-generator&demo-title=AIAnimeGenerator&demo-description=AI%20Anime%20Image%20Generator&demo-url=https://www.aianimegenerators.com&demo-image=https://www.aianimegenerators.com/og.png)
 
 
 ## 关于我
 
 **AI独立开发者**
 
-[Github](https://github.com/Caron77)  
+[Github](https://github.com/Caron77ai)  
 [Twitter/X](https://twitter.com/Caron7_7)  
 [即刻](https://okjk.co/E9hAvS) 
 [微信公众号](AI大模型应用实战)  
@@ -61,4 +61,4 @@ npm run dev
 
 <a href="buymeacoffee.com/caron77" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;" ></a>
 
-<img src="./public/zs.jpeg" alt="赞赏作者" style="height: 200px; width: 200px">
+<img src="./public/Caronai.jpg" alt="赞赏作者" style="height: 200px; width: 200px">

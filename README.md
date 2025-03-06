@@ -52,7 +52,7 @@ Deploy with Vercel or Zeabur:
 
 **AI Independent Developer**
 
-[Github](https://github.com/Caron77)  
+[Github](https://github.com/Caron77ai)  
 [Twitter/X](https://twitter.com/Caron7_7)  
 
 
