@@ -60,6 +60,4 @@ If this project helps you, please star the repository and consider sponsoring me
 
 <a href="https://www.buymeacoffee.com/yourusername" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;" ></a>
 
-<a href="https://afdian.net/a/yourafdianusername" target="_blank"><img src="./public/afd.png" alt="Support me on Afdian" style="height: 50px !important"></a>
-
-<img src="./public/zs.jpeg" alt="Appreciate the author" style="height: 200px; width: 200px">
+<img src="./public/Caronai.jpg" alt="Appreciate the author" style="height: 200px; width: 200px">
