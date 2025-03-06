@@ -1,0 +1,54 @@
+{
+  "Hero": {
+    "title1": "驚くべき",
+    "title2": "アニメアート",
+    "title3": "を創造する",
+    "description": "高効率でスマートな操作性に優れたアニメアートジェネレーターです。多様な創作ニーズに応じ、短時間でアニメアートの創作を実現します。"
+  },
+  "SocialProof": {
+    "maker": "開発者が迅速に出荷"
+  },
+  "Feature": {
+    "title": "Feature"
+  },
+  "Pricing": {
+    "title": "料金プラン",
+    "title2": "ニーズに合ったプランをお選びください。",
+    "description": "さまざまな要件や予算に対応する柔軟な料金プランをご用意しています。",
+    "doYouLike": "このAIアニメ生成器は気に入りましたか？",
+    "follow": "私のTwitterをフォローしてください。"
+  },
+  "WallOfLove": {
+    "title": "WallOfLove",
+    "description1": "もしこのAIアニメジェネレーターを使用し、Twitterで推薦していただければ、",
+    "description2": "私に知らせてください",
+    "description3": "。あなたのツイートと推薦をここに表示します。"
+  },
+  "FAQ": {
+    "title": "FAQs",
+    "description": "最も頻繁に尋ねられる質問はこちらです。"
+  },
+  "CTA": {
+    "title": "今すぐ素晴らしいアニメアートを作成しよう",
+    "description1": "解き放て",
+    "description2": "あなたの創造力を",
+    "description3": "そして",
+    "description4": "あなたのアニメのビジョンを",
+    "description5": "現実に",
+    "description6": "！"
+  },
+  "CTAButton": {
+    "title": "無料で試す！"
+  },
+  "AnimeGenerator": {
+    "title": "アニメ画像ジェネレーター",
+    "description": "アニメ画像を生成する説明を入力してください：",
+    "generateButton": "生成",
+    "generatingButton": "生成中...",
+    "resultTitle": "生成された画像",
+    "inputPlaceholder": "ここに説明を入力してください...",
+    "errorMessage": "エラーが発生しました。もう一度お試しください。",
+    "invalidResponseFormat": "無効な応答形式",
+    "remainingGenerations": "使用済み生成回数：{used}/{total}"
+  }
+}

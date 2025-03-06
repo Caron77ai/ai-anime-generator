@@ -1,0 +1,54 @@
+{
+  "Hero": {
+    "title1": "AI动漫",
+    "title2": "创作",
+    "title3": "神器",
+    "description": "一个高效、智能且易于操作的动漫艺术生成器，适合各类创作需求，助您在短时间内实现动漫艺术创作。"
+  },
+  "SocialProof": {
+    "maker": "制作者快速开发"
+  },
+  "Feature": {
+    "title": "Feature"
+  },
+  "Pricing": {
+    "title": "定价",
+    "title2": "选择适合您的计划。",
+    "description": "我们提供各种灵活的价格计划，以满足不同的需求和预算。",
+    "doYouLike": "您喜欢这个AI动漫生成器吗？",
+    "follow": "关注我的Twitter。"
+  },
+  "WallOfLove": {
+    "title": "Wall of Love",
+    "description1": "如果你使用这个AI动漫生成器并在Twitter上推荐了，",
+    "description2": "请告诉我",
+    "description3": "，我会在这里展示你的推文和推荐。"
+  },
+  "FAQ": {
+    "title": "FAQs",
+    "description": "这里有一些最常见的问题。"
+  },
+  "CTA": {
+    "title": "立即创建令人惊叹的动漫艺术作品",
+    "description1": "释放",
+    "description2": "你的创造力",
+    "description3": "并且",
+    "description4": "将你的动漫愿景",
+    "description5": "变为现实",
+    "description6": "！"
+  },
+  "CTAButton": {
+    "title": "免费试用！"
+  },
+  "AnimeGenerator": {
+    "title": "动漫图像生成器",
+    "description": "输入描述以生成动漫图像：",
+    "generateButton": "生成",
+    "generatingButton": "生成中...",
+    "resultTitle": "生成的图像",
+    "inputPlaceholder": "在此输入您的描述...",
+    "errorMessage": "发生错误。请重试。",
+    "invalidResponseFormat": "无效的响应格式",
+    "remainingGenerations": "已使用生成次数：{used}/{total}"
+  }
+}

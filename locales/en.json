@@ -1,0 +1,61 @@
+{
+  "Hero": {
+    "title1": "Create",
+    "title2": "Stunning Anime",
+    "title3": "Art",
+    "description": "Transform your creative ideas into stunning anime art with our advanced AI Anime Generator, perfect for artists, creators, and enthusiasts alike, offering limitless creative potential."
+  },
+  "SocialProof": {
+    "maker": "makers ship fast"
+  },
+  "Feature": {
+    "title": "Features"
+  },
+  "Pricing": {
+    "title": "Pricing",
+    "title2": "Choose the plan that fits your needs.",
+    "description": "We offer a variety of flexible pricing plans to accommodate different requirements and budgets.",
+    "doYouLike": "Do you like this AI anime generator?",
+    "follow": "Follow my Twitter."
+  },
+  "WallOfLove": {
+    "title": "Wall of Love",
+    "description1": "If you use this AI anime generator and recommend it on your Twitter,",
+    "description2": "please let me know",
+    "description3": ". I will display your tweet and recommendation here."
+  },
+  "FAQ": {
+    "title": "FAQs",
+    "description": "Here are some of the most frequently asked questions."
+  },
+  "CTA": {
+    "title": "Create Stunning Anime Artwork Now",
+    "description1": "Unleash",
+    "description2": "your creativity",
+    "description3": "and",
+    "description4": "bring your anime visions",
+    "description5": "to life",
+    "description6": "!"
+  },
+  "CTAButton": {
+    "title": "Try for free!"
+  },
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "content": "/privacy-policy-en"
+  },
+  "Footer": {
+    "privacyPolicy": "Privacy Policy"
+  },
+  "AnimeGenerator": {
+    "title": "Anime Image Generator",
+    "description": "Enter a description to generate an anime image:",
+    "generateButton": "Generate",
+    "generatingButton": "Generating...",
+    "resultTitle": "Generated Image",
+    "inputPlaceholder": "Enter your description here...",
+    "errorMessage": "An error occurred. Please try again.",
+    "invalidResponseFormat": "Invalid response format",
+    "remainingGenerations": "Used generations: {used}/{total}"
+  }
+}
