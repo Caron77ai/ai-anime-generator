@@ -50,9 +50,7 @@ const baseSiteConfig = {
     { url: 'https://aianimegenerators.com', name: 'AI Anime Generators' },
     { url: 'https://landingpage.weijunext.com/', name: 'Landing Page Boilerplate' },
     { url: 'https://nextjs.weijunext.com/', name: 'Next.js Practice' },
-    // { url: 'https://starter.weijunext.com/', name: 'Next.js Starter' },
-    // { url: 'https://githubbio.com', name: 'Github Bio Generator' },
-    // { url: 'https://github.com/weijunext/indie-hacker-tools', name: 'Indie Hacker Tools' },
+    { url: 'https://pollo.ai?ref=mzyyode', name: 'Pollo AI' },
   ]
 }
 
