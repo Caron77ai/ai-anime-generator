@@ -21,7 +21,7 @@ const baseSiteConfig = {
     }
   ],
   creator: '@Caron77',
-  openSourceURL: 'https://github.com/Caron77',
+  openSourceURL: 'https://github.com/Caron77ai',
   themeColors: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' },
