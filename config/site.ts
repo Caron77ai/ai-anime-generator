@@ -40,7 +40,7 @@ const baseSiteConfig = {
   footerLinks: [
     { name: 'email', href: "mailto:caron77ai@gmail.com", icon: MdEmail },
     { name: 'twitter', href: "https://x.com/Caron7_7", icon: BsTwitterX },
-    { name: 'github', href: "https://github.com/Caron77", icon: BsGithub },
+    { name: 'github', href: "https://github.com/Caron77ai", icon: BsGithub },
     { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/caron77", icon: SiBuymeacoffee },
     { name: 'juejin', href: "https://juejin.cn/user/*****", icon: SiJuejin },
     { name: 'weChat', href: "https://ainavi.world/", icon: BsWechat }
