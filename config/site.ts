@@ -10,7 +10,7 @@ const baseSiteConfig = {
   description:
     "Transform your creative ideas into stunning anime art with our advanced AI Anime Generator, perfect for artists, creators, and enthusiasts alike, offering limitless creative potential.",
   url: "https://aianimegenerators.com",
-  ogImage: "https://landingpage.weijunext.com/og.png",
+  ogImage: "https://aianimegenerators.com/og.png",
   metadataBase: '/',
   keywords: ["ai anime generator", "ai anime art", "anime image generator", "anime art creator", "ai art generator", "create anime art", "anime art tool", "high-resolution anime images", "customizable anime art", "ai art technology", "anime avatar creator", "comic book illustration tool", "anime wallpaper generator", "digital art projects", "anime content creation", "social media anime art", "ai art for videos", "anime backgrounds generator", "personalized anime art", "advanced ai art tool"],
   authors: [
