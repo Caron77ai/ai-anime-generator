@@ -33,7 +33,7 @@ const baseSiteConfig = {
     apple: "/logo.png",
   },
   headerLinks: [
-    { name: 'repo', href: OPEN_SOURCE_URL, icon: BsGithub },
+    { name: 'repo', href: "https://github.com/Caron77ai", icon: BsGithub },
     { name: 'twitter', href: "https://x.com/Caron7_7", icon: BsTwitterX },
     { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/caron77", icon: SiBuymeacoffee }
   ],
