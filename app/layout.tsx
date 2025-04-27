@@ -28,6 +28,9 @@ export const metadata = {
   metadataBase: siteConfig.metadataBase,
   openGraph: siteConfig.openGraph,
   twitter: siteConfig.twitter,
+  other: {
+    'google-adsense-account': 'ca-pub-6994493911866650',
+  },
 };
 
 export const viewport = {
