@@ -21,16 +21,63 @@ export async function POST(request: NextRequest) {
   }
 
   try {
+    // 首先检查用户是否存在于users表中
+    const { data: userData, error: userError } = await supabase
+      .from('users')
+      .select('id')
+      .eq('id', userId)
+      .maybeSingle();
+
+    // 如果用户不存在，尝试在users表中创建用户记录
+    if (!userData) {
+      // 从Clerk获取用户信息
+      const clerkUser = auth().userId;
+
+      // 这里简单创建一个基础用户记录，实际应用中可能需要更多信息
+      const { error: insertUserError } = await supabase
+        .from('users')
+        .insert({
+          id: userId,
+          email: `user_${userId}@example.com`, // 临时邮箱，实际应用需要真实邮箱
+          username: `user_${userId}` // 临时用户名
+        });
+
+      if (insertUserError) {
+        console.error('Error creating user:', insertUserError);
+        return NextResponse.json({ error: 'Failed to create user record' }, { status: 500 });
+      }
+    }
+
     // 获取用户的图片使用情况
     const { data: imageCountData, error: imageCountError } = await supabase
       .from('user_image_counts')
       .select('free_images_used, paid_images_used')
       .eq('user_id', userId)
-      .single();
+      .maybeSingle();
 
-    if (imageCountError) {
+    // 如果没有找到记录，先创建一个初始记录
+    let freeImagesUsed = 0;
+    let paidImagesUsed = 0;
+
+    if (!imageCountData && !imageCountError) {
+      const { error: insertError } = await supabase
+        .from('user_image_counts')
+        .insert({
+          user_id: userId,
+          free_images_used: 0,
+          paid_images_used: 0
+        });
+
+      if (insertError) {
+        console.error('Error creating image count record:', insertError);
+        return NextResponse.json({ error: 'Failed to initialize image count record' }, { status: 500 });
+      }
+    } else if (imageCountError) {
       console.error('Error fetching image counts:', imageCountError);
       return NextResponse.json({ error: 'Failed to fetch image counts' }, { status: 500 });
+    } else if (imageCountData) {
+      freeImagesUsed = imageCountData.free_images_used || 0;
+      paidImagesUsed = imageCountData.paid_images_used || 0;
     }
 
     // 获取用户的订阅信息
@@ -39,21 +86,15 @@ export async function POST(request: NextRequest) {
       .from('user_subscriptions')
       .select('images_limit, is_active, end_date')
       .eq('user_id', userId)
-      .single();
+      .maybeSingle();
 
-    if (subscriptionError) {
-      if (subscriptionError.code === 'PGRST116') {
-        console.log('User has no active subscription');
-      } else {
-        console.error('Error fetching subscription data:', subscriptionError);
-        return NextResponse.json({ error: 'Failed to fetch subscription data' }, { status: 500 });
-      }
-    } else {
+    if (subscriptionError && subscriptionError.code !== 'PGRST116') {
+      console.error('Error fetching subscription data:', subscriptionError);
+      return NextResponse.json({ error: 'Failed to fetch subscription data' }, { status: 500 });
+    } else if (data) {
       subscriptionData = data;
     }
 
-    const freeImagesUsed = imageCountData?.free_images_used || 0;
-    const paidImagesUsed = imageCountData?.paid_images_used || 0;
     const subscriptionLimit = subscriptionData?.images_limit || 0;
     const isSubscriptionActive = subscriptionData?.is_active && new Date(subscriptionData.end_date) > new Date();
 
@@ -63,7 +104,7 @@ export async function POST(request: NextRequest) {
     if (isSubscriptionActive && paidImagesUsed < subscriptionLimit) {
       canGenerate = true;
       isPaid = true;
-    } else if (freeImagesUsed < 10) {
+    } else if (freeImagesUsed < 5) {
       canGenerate = true;
     }
 

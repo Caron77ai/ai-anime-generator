@@ -49,6 +49,8 @@
     "inputPlaceholder": "ここに説明を入力してください...",
     "errorMessage": "エラーが発生しました。もう一度お試しください。",
     "invalidResponseFormat": "無効な応答形式",
-    "remainingGenerations": "使用済み生成回数：{used}/{total}"
+    "remainingGenerations": "使用済み生成回数：{used}/{total}",
+    "placeholderText": "生成された画像がここに表示されます",
+    "inputHintText": "説明を入力して生成ボタンをクリックしてください"
   }
 }

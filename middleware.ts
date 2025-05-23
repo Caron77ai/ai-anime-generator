@@ -7,6 +7,7 @@ const isPublicRoute = createRouteMatcher([
   '/sign-up(.*)',
   '/api/create-checkout-session',
   '/api/webhook',
+  '/api/generate-image',
   '/ads.txt',
   // 其他公共路由...
 ]);

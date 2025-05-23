@@ -49,6 +49,8 @@
     "inputPlaceholder": "Введите ваше описание здесь...",
     "errorMessage": "Произошла ошибка. Пожалуйста, попробуйте еще раз.",
     "invalidResponseFormat": "Недопустимый формат ответа",
-    "remainingGenerations": "Использовано генераций: {used}/{total}"
+    "remainingGenerations": "Использовано генераций: {used}/{total}",
+    "placeholderText": "Созданное изображение появится здесь",
+    "inputHintText": "Введите описание и нажмите кнопку Создать"
   }
 }

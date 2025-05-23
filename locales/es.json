@@ -49,6 +49,8 @@
     "inputPlaceholder": "Ingrese su descripción aquí...",
     "errorMessage": "Ocurrió un error. Por favor, inténtelo de nuevo.",
     "invalidResponseFormat": "Formato de respuesta inválido",
-    "remainingGenerations": "Generaciones utilizadas: {used}/{total}"
+    "remainingGenerations": "Generaciones utilizadas: {used}/{total}",
+    "placeholderText": "La imagen generada aparecerá aquí",
+    "inputHintText": "Ingrese una descripción y haga clic en el botón Generar"
   }
 }

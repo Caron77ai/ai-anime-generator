@@ -49,6 +49,8 @@
     "inputPlaceholder": "在此输入您的描述...",
     "errorMessage": "发生错误。请重试。",
     "invalidResponseFormat": "无效的响应格式",
-    "remainingGenerations": "已使用生成次数：{used}/{total}"
+    "remainingGenerations": "已使用生成次数：{used}/{total}",
+    "placeholderText": "生成的图像将在这里显示",
+    "inputHintText": "输入描述并点击生成按钮"
   }
 }

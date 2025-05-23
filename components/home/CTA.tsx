@@ -6,7 +6,7 @@ interface CTAProps {
     title: string;
     description: string;
   };
-  CTALocale: {
+  CTALocale?: {
     title: string;
   };
 }
@@ -24,9 +24,11 @@ export default function CTA({ locale, CTALocale }: CTAProps) {
               {locale.description}
             </p>
           </div>
-          <div>
-            <CTAButton locale={CTALocale} />
-          </div>
+          {CTALocale && (
+            <div>
+              <CTAButton locale={CTALocale} />
+            </div>
+          )}
         </div>
       </div>
     </div>

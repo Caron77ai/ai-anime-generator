@@ -6,7 +6,7 @@ type LineTextProps = {
 
 export const LineText = ({ children }: LineTextProps) => {
   return (
-    <span className="relative whitespace-nowrap text-blue-600">
+    <span className="relative whitespace-nowrap" style={{ color: "rgb(37 99 235 / var(--tw-text-opacity))" }}>
       <svg
         aria-hidden="true"
         viewBox="0 0 418 42"

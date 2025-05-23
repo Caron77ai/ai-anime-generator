@@ -49,6 +49,8 @@
     "inputPlaceholder": "أدخل وصفك هنا...",
     "errorMessage": "حدث خطأ. يرجى المحاولة مرة أخرى.",
     "invalidResponseFormat": "تنسيق استجابة غير صالح",
-    "remainingGenerations": "الإنشاءات المستخدمة: {used}/{total}"
+    "remainingGenerations": "الإنشاءات المستخدمة: {used}/{total}",
+    "placeholderText": "ستظهر الصورة المنشأة هنا",
+    "inputHintText": "أدخل وصفًا واضغط على زر الإنشاء"
   }
 }

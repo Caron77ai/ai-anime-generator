@@ -1,3 +1,4 @@
+import AnimeGenerator from "@/components/AnimeGenerator";
 import CTA from "@/components/home/CTA";
 import FAQ from "@/components/home/FAQ";
 import Feature from "@/components/home/Feature";
@@ -22,25 +23,47 @@ export default async function LangHome({
   return (
     <>
       {/* Hero Section */}
-      <Hero locale={dict.Hero} CTALocale={dict.CTAButton} />
-      <SocialProof locale={dict.SocialProof} />
+      <Hero locale={dict.Hero} />
+
+      {/* AnimeGenerator Section */}
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8 bg-white dark:bg-slate-900 rounded-lg shadow-md my-6 border border-blue-50 dark:border-blue-900">
+        <AnimeGenerator locale={dict.AnimeGenerator} />
+      </section>
+
+      {/* 减少SocialProof和其他组件之间的间距 */}
+      <div className="py-4">
+        <SocialProof locale={dict.SocialProof} />
+      </div>
+
       {/* display technology stack, partners, project honors, etc. */}
-      <ScrollingLogos />
+      <div className="py-4">
+        <ScrollingLogos />
+      </div>
 
-      {/* USP (Unique Selling Proposition) */}
-      <Feature id="Features" locale={dict.Feature} langName={langName} />
+      {/* USP (Unique Selling Proposition) - 减少间距 */}
+      <div className="py-4">
+        <Feature id="Features" locale={dict.Feature} langName={langName} />
+      </div>
 
-      {/* Pricing */}
-      <Pricing id="Pricing" locale={dict.Pricing} langName={langName} />
+      {/* Pricing - 减少间距 */}
+      <div className="py-4">
+        <Pricing id="Pricing" locale={dict.Pricing} langName={langName} />
+      </div>
 
-      {/* Testimonials / Wall of Love */}
-      <WallOfLove id="WallOfLove" locale={dict.WallOfLove} />
+      {/* Testimonials / Wall of Love - 减少间距 */}
+      <div className="py-4">
+        <WallOfLove id="WallOfLove" locale={dict.WallOfLove} />
+      </div>
 
-      {/* FAQ (Frequently Asked Questions) */}
-      <FAQ id="FAQ" locale={dict.FAQ} langName={langName} />
+      {/* FAQ (Frequently Asked Questions) - 减少间距 */}
+      <div className="py-4">
+        <FAQ id="FAQ" locale={dict.FAQ} langName={langName} />
+      </div>
 
-      {/* CTA (Call to Action) */}
-      <CTA locale={dict.CTA} CTALocale={dict.CTAButton} />
+      {/* CTA (Call to Action) - 减少间距 */}
+      <div className="py-4">
+        <CTA locale={dict.CTA} />
+      </div>
     </>
   );
 }
